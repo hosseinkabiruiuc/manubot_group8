@@ -1,21 +1,18 @@
 ---
-title: "Manuscript Title"
+title: "CEE498 Data Science Fall 2020
+Project 3: Concrete Strength Prediction"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - Machine Learning
+  - Concrete Strength
+  - Civil Engineering
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: qinyuz2
+    name: Qinyu Zhang
+    initials: QZ
+    email: qinyuz2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
   - github: janeroe
     name: Jane Roe
     initials: JR
