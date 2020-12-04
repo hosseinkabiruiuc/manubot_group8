@@ -15,13 +15,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction" />
+  <meta name="dc.title" content="Project 3: Concrete Strength Prediction" />
 
-  <meta name="citation_title" content="CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction" />
+  <meta name="citation_title" content="Project 3: Concrete Strength Prediction" />
 
-  <meta property="og:title" content="CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction" />
+  <meta property="og:title" content="Project 3: Concrete Strength Prediction" />
 
-  <meta property="twitter:title" content="CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction" />
+  <meta property="twitter:title" content="Project 3: Concrete Strength Prediction" />
 
   <meta name="dc.date" content="2020-12-04" />
 
@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/16adb25d36d34429612868bf2443623947067f48/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4a5ee7be30dcc4c55df44db47a8eac2a6c8e1aed/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/16adb25d36d34429612868bf2443623947067f48/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4a5ee7be30dcc4c55df44db47a8eac2a6c8e1aed/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/16adb25d36d34429612868bf2443623947067f48/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4a5ee7be30dcc4c55df44db47a8eac2a6c8e1aed/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -89,7 +89,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: 'CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction'
+title: 'Project 3: Concrete Strength Prediction'
 ...
 
 
@@ -99,9 +99,9 @@ title: 'CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/16adb25d36d34429612868bf2443623947067f48/))
+([permalink](https://qinyuz2.github.io/project3/v/4a5ee7be30dcc4c55df44db47a8eac2a6c8e1aed/))
 was automatically generated
-from [qinyuz2/project3@16adb25](https://github.com/qinyuz2/project3/tree/16adb25d36d34429612868bf2443623947067f48)
+from [qinyuz2/project3@4a5ee7b](https://github.com/qinyuz2/project3/tree/4a5ee7be30dcc4c55df44db47a8eac2a6c8e1aed)
 on December 4, 2020.
 </em></small>
 
