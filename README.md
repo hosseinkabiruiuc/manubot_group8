@@ -2,7 +2,7 @@
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://qinyuz2.github.io/project3/)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://qinyuz2.github.io/project3/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/rootstock/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/manubot/rootstock/workflows/Manubot/badge.svg)](https://github.com/manubot/rootstock/actions)
 [![Travis Build Status](https://travis-ci.com/manubot/rootstock.svg?branch=master)](https://travis-ci.com/manubot/rootstock)
