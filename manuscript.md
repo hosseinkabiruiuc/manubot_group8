@@ -15,13 +15,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Concrete Strength Prediction" />
+  <meta name="dc.title" content="CEE498 Data Science Fall 2020" />
 
-  <meta name="citation_title" content="Concrete Strength Prediction" />
+  <meta name="citation_title" content="CEE498 Data Science Fall 2020" />
 
-  <meta property="og:title" content="Concrete Strength Prediction" />
+  <meta property="og:title" content="CEE498 Data Science Fall 2020" />
 
-  <meta property="twitter:title" content="Concrete Strength Prediction" />
+  <meta property="twitter:title" content="CEE498 Data Science Fall 2020" />
 
   <meta name="dc.date" content="2020-12-04" />
 
@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/72f30447ca1d51ecb0615c5cd3602839a45997db/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/20b1d23debe7185e58e124ab24075de5589e1f8d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/72f30447ca1d51ecb0615c5cd3602839a45997db/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/20b1d23debe7185e58e124ab24075de5589e1f8d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/72f30447ca1d51ecb0615c5cd3602839a45997db/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/20b1d23debe7185e58e124ab24075de5589e1f8d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -89,7 +89,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Concrete Strength Prediction
+title: CEE498 Data Science Fall 2020
 ...
 
 
@@ -99,9 +99,9 @@ title: Concrete Strength Prediction
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/72f30447ca1d51ecb0615c5cd3602839a45997db/))
+([permalink](https://qinyuz2.github.io/project3/v/20b1d23debe7185e58e124ab24075de5589e1f8d/))
 was automatically generated
-from [qinyuz2/project3@72f3044](https://github.com/qinyuz2/project3/tree/72f30447ca1d51ecb0615c5cd3602839a45997db)
+from [qinyuz2/project3@20b1d23](https://github.com/qinyuz2/project3/tree/20b1d23debe7185e58e124ab24075de5589e1f8d)
 on December 4, 2020.
 </em></small>
 
