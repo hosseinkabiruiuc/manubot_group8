@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4e3cf0413ebf28fa75354ecaadb235fda7ed895f/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4e3cf0413ebf28fa75354ecaadb235fda7ed895f/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4e3cf0413ebf28fa75354ecaadb235fda7ed895f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/4e3cf0413ebf28fa75354ecaadb235fda7ed895f/))
+([permalink](https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/))
 was automatically generated
-from [qinyuz2/project3@4e3cf04](https://github.com/qinyuz2/project3/tree/4e3cf0413ebf28fa75354ecaadb235fda7ed895f)
+from [qinyuz2/project3@4bce082](https://github.com/qinyuz2/project3/tree/4bce08267976c16be06020f1c3c0415a1b7115ee)
 on December 4, 2020.
 </em></small>
 
@@ -127,7 +127,7 @@ on December 4, 2020.
 
 
 
-## Abstract {.page_break_before}
+## Introduction {.page_break_before}
 
 
 
@@ -435,6 +435,9 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 <i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
+
+
+
 
 
 ## References {.page_break_before}
