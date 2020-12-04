@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/5be45f1e3e62a53d8bcbbea62bc99abebc2cc692/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/5be45f1e3e62a53d8bcbbea62bc99abebc2cc692/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/5be45f1e3e62a53d8bcbbea62bc99abebc2cc692/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'CEE498 Data Science, Fall 2020, Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/4bce08267976c16be06020f1c3c0415a1b7115ee/))
+([permalink](https://qinyuz2.github.io/project3/v/5be45f1e3e62a53d8bcbbea62bc99abebc2cc692/))
 was automatically generated
-from [qinyuz2/project3@4bce082](https://github.com/qinyuz2/project3/tree/4bce08267976c16be06020f1c3c0415a1b7115ee)
+from [qinyuz2/project3@5be45f1](https://github.com/qinyuz2/project3/tree/5be45f1e3e62a53d8bcbbea62bc99abebc2cc692)
 on December 4, 2020.
 </em></small>
 
@@ -438,6 +438,7 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 
 
 
+## Method
 
 
 ## References {.page_break_before}
