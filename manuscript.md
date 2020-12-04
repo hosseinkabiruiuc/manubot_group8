@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/a5756aa14e6e158f33176020bac9ef6ebfa55935/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/0d73c012ed1fb61e4b641f07c72a3105364807b5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/a5756aa14e6e158f33176020bac9ef6ebfa55935/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/0d73c012ed1fb61e4b641f07c72a3105364807b5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/a5756aa14e6e158f33176020bac9ef6ebfa55935/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/0d73c012ed1fb61e4b641f07c72a3105364807b5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: CEE498 Data Science Fall 2020
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/a5756aa14e6e158f33176020bac9ef6ebfa55935/))
+([permalink](https://qinyuz2.github.io/project3/v/0d73c012ed1fb61e4b641f07c72a3105364807b5/))
 was automatically generated
-from [qinyuz2/project3@a5756aa](https://github.com/qinyuz2/project3/tree/a5756aa14e6e158f33176020bac9ef6ebfa55935)
+from [qinyuz2/project3@0d73c01](https://github.com/qinyuz2/project3/tree/0d73c012ed1fb61e4b641f07c72a3105364807b5)
 on December 4, 2020.
 </em></small>
 
