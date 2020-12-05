@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/6431dc9bd3ef870784784bf6d98eee0ea4232e94/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1eb4a75be82b70f23f559476a7a16fd161458a92/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/6431dc9bd3ef870784784bf6d98eee0ea4232e94/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1eb4a75be82b70f23f559476a7a16fd161458a92/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/6431dc9bd3ef870784784bf6d98eee0ea4232e94/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1eb4a75be82b70f23f559476a7a16fd161458a92/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/6431dc9bd3ef870784784bf6d98eee0ea4232e94/))
+([permalink](https://qinyuz2.github.io/project3/v/1eb4a75be82b70f23f559476a7a16fd161458a92/))
 was automatically generated
-from [qinyuz2/project3@6431dc9](https://github.com/qinyuz2/project3/tree/6431dc9bd3ef870784784bf6d98eee0ea4232e94)
+from [qinyuz2/project3@1eb4a75](https://github.com/qinyuz2/project3/tree/1eb4a75be82b70f23f559476a7a16fd161458a92)
 on December 5, 2020.
 </em></small>
 
@@ -402,7 +402,7 @@ prediction2.to_csv('prediction2.csv')
 ```
 After submitting the *prediction2.csv* to Kaggle Competition, it provides a score of 5.50396 which indicates Root Mean Squared Error. We can expect a model accuracy of 85%-90% for such a score.
 
-![**Figure: Kaggle Competition Page**](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png?raw=true)
+![**Figure: Kaggle Competition Page**](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png?raw=true）
 
 
 ![Kaggle](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png?raw=true)
