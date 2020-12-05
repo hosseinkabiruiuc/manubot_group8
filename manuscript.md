@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1e1c6b14f420c35504006f8469daa75f3f6648c3/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1789734bb14d19447e197e4786da8e5bde18593f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1e1c6b14f420c35504006f8469daa75f3f6648c3/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1789734bb14d19447e197e4786da8e5bde18593f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1e1c6b14f420c35504006f8469daa75f3f6648c3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1789734bb14d19447e197e4786da8e5bde18593f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/1e1c6b14f420c35504006f8469daa75f3f6648c3/))
+([permalink](https://qinyuz2.github.io/project3/v/1789734bb14d19447e197e4786da8e5bde18593f/))
 was automatically generated
-from [qinyuz2/project3@1e1c6b1](https://github.com/qinyuz2/project3/tree/1e1c6b14f420c35504006f8469daa75f3f6648c3)
+from [qinyuz2/project3@1789734](https://github.com/qinyuz2/project3/tree/1789734bb14d19447e197e4786da8e5bde18593f)
 on December 5, 2020.
 </em></small>
 
@@ -312,9 +312,9 @@ The best parameters for the model is:
  'bootstrap': True}
  
  **Code for Random Forest Model**
- ```python
- # create a model
- model2_split = RandomForestRegressor(n_estimators = rf_random_split.best_params_['n_estimators'],
+```python
+# create a model
+model2_split = RandomForestRegressor(n_estimators = rf_random_split.best_params_['n_estimators'],
                                min_samples_split = rf_random_split.best_params_['min_samples_split'],
                                min_samples_leaf = rf_random_split.best_params_['min_samples_leaf'],
                                max_features = rf_random_split.best_params_['max_features'],
@@ -406,7 +406,7 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 
 
 
-## Conclusion
+## 4. Conclusion
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
