@@ -43,6 +43,7 @@ Qinyu
 qinyuz
 qui
 quis
+Regressor
 reprehenderit
 sed
 sint

@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-04'
+date-meta: '2020-12-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Project 3: Concrete Strength Prediction" />
 
-  <meta name="dc.date" content="2020-12-04" />
+  <meta name="dc.date" content="2020-12-05" />
 
-  <meta name="citation_publication_date" content="2020-12-04" />
+  <meta name="citation_publication_date" content="2020-12-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,10 +99,10 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/))
+([permalink](https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/))
 was automatically generated
-from [qinyuz2/project3@5e87425](https://github.com/qinyuz2/project3/tree/5e87425cdf41a590808eec69b89e30af4039402f)
-on December 4, 2020.
+from [qinyuz2/project3@dc3c000](https://github.com/qinyuz2/project3/tree/dc3c000bc13ec0881d621a432d715f0ca0399517)
+on December 5, 2020.
 </em></small>
 
 ## Authors
@@ -432,7 +432,37 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 ## Method
 
 
-## Modeling
+## Model Training and Evaluation
+### Linear Regression
+Linear Regression is the simplest but powerful model. In the previous studies, it was widely used in the prediction of concrete strength. This model assumes a linear relationship between independent and dependent variables.
+
+**Code for Linear Regression Model**
+```python
+from sklearn.linear_model import LinearRegression
+
+lin_reg = LinearRegression()
+lin_reg.fit(train_x, train_y)
+y_pred_lin= lin_reg.predict(test_x)
+```
+Accuracy of Model is: 0.5177053629131334
+Root Mean Squared Error of Model is: 11.420285520195613
+
+### Decision Tree Regressor
+Decision-tree algorithm is a kind of supervised learning algorithms. It can be used in classification and regression problems. 
+
+**Code for Decision Tree Regressor**
+```python
+from sklearn.tree import DecisionTreeRegressor
+
+dtregressor = DecisionTreeRegressor(random_state = 0, min_samples_split=5)
+dtregressor.fit(train_x, train_y)
+y_pred_dt= dtregressor.predict(test_x)
+```
+
+Accuracy of Model is: 0.8204795438030693
+Root Mean Squared Error of Model is: 6.9675118677407
+
+### Random Forest Regression
 
 
 ## Conclusion

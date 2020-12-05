@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Qinyu Zhang" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-12-04" />
+  <meta name="dcterms.date" content="2020-12-05" />
   <meta name="keywords" content="Machine Learning, Concrete Strength, Civil Engineering" />
   <title>Project 3: Concrete Strength Prediction</title>
   <style>
@@ -91,8 +91,8 @@
   <meta name="citation_title" content="Project 3: Concrete Strength Prediction" />
   <meta property="og:title" content="Project 3: Concrete Strength Prediction" />
   <meta property="twitter:title" content="Project 3: Concrete Strength Prediction" />
-  <meta name="dc.date" content="2020-12-04" />
-  <meta name="citation_publication_date" content="2020-12-04" />
+  <meta name="dc.date" content="2020-12-05" />
+  <meta name="citation_publication_date" content="2020-12-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,10 +134,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/5e87425cdf41a590808eec69b89e30af4039402f/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/dc3c000bc13ec0881d621a432d715f0ca0399517/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/5e87425cdf41a590808eec69b89e30af4039402f">qinyuz2/project3@5e87425</a>
-on December 4, 2020.
+from <a href="https://github.com/qinyuz2/project3/tree/dc3c000bc13ec0881d621a432d715f0ca0399517">qinyuz2/project3@dc3c000</a>
+on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -366,7 +366,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:48e6eddf-5f0f-4794-a364-714ffd7bb531" class="tablenos">
+<div id="tbl:91355add-38c0-442f-91a4-6bbd8e30c252" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -448,7 +448,28 @@ useful for <em>important information</em> - <a href="https://manubot.org/">manub
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <h2 id="method">Method</h2>
-<h2 id="modeling">Modeling</h2>
+<h2 id="model-training-and-evaluation">Model Training and Evaluation</h2>
+<h3 id="linear-regression">Linear Regression</h3>
+<p>Linear Regression is the simplest but powerful model. In the previous studies, it was widely used in the prediction of concrete strength. This model assumes a linear relationship between independent and dependent variables.</p>
+<p><strong>Code for Linear Regression Model</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>lin_reg <span class="op">=</span> LinearRegression()</span>
+<span id="cb3-4"><a href="#cb3-4"></a>lin_reg.fit(train_x, train_y)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>y_pred_lin<span class="op">=</span> lin_reg.predict(test_x)</span></code></pre></div>
+<p>Accuracy of Model is: 0.5177053629131334
+Root Mean Squared Error of Model is: 11.420285520195613</p>
+<h3 id="decision-tree-regressor">Decision Tree Regressor</h3>
+<p>Decision-tree algorithm is a kind of supervised learning algorithms. It can be used in classification and regression problems.</p>
+<p><strong>Code for Decision Tree Regressor</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeRegressor</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a>dtregressor <span class="op">=</span> DecisionTreeRegressor(random_state <span class="op">=</span> <span class="dv">0</span>, min_samples_split<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a>dtregressor.fit(train_x, train_y)</span>
+<span id="cb4-5"><a href="#cb4-5"></a>y_pred_dt<span class="op">=</span> dtregressor.predict(test_x)</span></code></pre></div>
+<p>Accuracy of Model is: 0.8204795438030693
+Root Mean Squared Error of Model is: 6.9675118677407</p>
+<h3 id="random-forest-regression">Random Forest Regression</h3>
 <h2 id="conclusion">Conclusion</h2>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
