@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/e425e58a3c91c593f0aefc0aea350a308f378df6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/e425e58a3c91c593f0aefc0aea350a308f378df6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/e425e58a3c91c593f0aefc0aea350a308f378df6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/))
+([permalink](https://qinyuz2.github.io/project3/v/e425e58a3c91c593f0aefc0aea350a308f378df6/))
 was automatically generated
-from [qinyuz2/project3@4593683](https://github.com/qinyuz2/project3/tree/4593683a25d1750df6729d0e895f529738bfce60)
+from [qinyuz2/project3@e425e58](https://github.com/qinyuz2/project3/tree/e425e58a3c91c593f0aefc0aea350a308f378df6)
 on December 5, 2020.
 </em></small>
 
@@ -130,6 +130,283 @@ on December 5, 2020.
 ## Introduction {.page_break_before}
 
 
+
+
+
+## 2. Method
+
+
+## 3. Discussion
+
+## 3.1 Model Training and Evaluation
+
+### 3.1.1 Linear Regression
+Linear Regression is the simplest but powerful model. In the previous studies, it was widely used in the prediction of concrete strength. This model assumes a linear relationship between independent and dependent variables.
+
+**Code for Linear Regression Model**
+```python
+from sklearn.linear_model import LinearRegression
+
+lin_reg = LinearRegression()
+lin_reg.fit(train_x, train_y)
+y_pred_lin= lin_reg.predict(test_x)
+```
+Accuracy of Model is: 0.5177053629131334
+
+Root Mean Squared Error of Model is: 11.420285520195613
+
+### 3.1.2 Lasso Method
+The Lasso is a shrinkage and selection method for linear regression. It minimizes the usual sum of squared errors, with a bound on the sum of the absolute values of the coefficients. 
+
+**Code for Lasso Model**
+```python
+from sklearn.linear_model import Lasso   
+
+las = Lasso(alpha=0.1)
+model2 = las.fit(train_x, train_y)
+predictions2 = las.predict(test_x)
+```
+Accuracy of Model is: 0.38967572787640603
+
+Root Mean Squared Error of Model is: 11.988560504390488
+
+### 3.1.3 K-nearest Neighbor
+The k-nearest neighbor is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems.
+
+**Code for K-nearest Neighbor Model**
+```python
+from sklearn.neighbors import KNeighborsRegressor
+
+knn = KNeighborsRegressor()
+model3=knn.fit(train_x, train_y)
+predictions3 = knn.predict(test_x)
+```
+Accuracy of Model is: 0.34345271643724284
+
+Root Mean Squared Error of Model is: 12.434253663809674
+
+### 3.1.4 Support Vector Machine
+Support vector machine is a supervised machine learning algorithm used for classification, regression and outlier detection. We use a linear Support Vector Machine model.
+
+**Code for Support Vector Machine Model**
+```python
+from sklearn.svm import SVR 
+
+svm= SVR(kernel='linear')
+model4=svm.fit(train_x, train_y)
+predictions4 = svm.predict(test_x)
+```
+Accuracy of Model is: 0.34808748601553163
+
+Root Mean Squared Error of Model is: 12.390287319386937
+
+### 3.1.5 Neural Network
+Neural Nework is also used in previous studies to predict concrete strength. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data. A neural network consists of input layer, hidden layers and output layer. It’s able to learn and model non-linear and complex relationships between independent and dependent variables.
+
+**Code for Neural Network Model**
+```python
+import tensorflow as tf
+
+layer_width = 128
+l1 = 0.0
+l2 = 0.05
+
+model1_split = tf.keras.Sequential()
+
+model1_split.add(tf.keras.layers.Dense(512, activation="relu", kernel_regularizer = tf.keras.regularizers.l1_l2(l1=l1, l2=l2)))
+model1_split.add(tf.keras.layers.BatchNormalization())
+model1_split.add(tf.keras.layers.Dense(256, activation="relu"))
+model1_split.add(tf.keras.layers.BatchNormalization())
+model1_split.add(tf.keras.layers.Dense(128, activation="relu"))
+model1_split.add(tf.keras.layers.BatchNormalization())
+model1_split.add(tf.keras.layers.Dense(128, activation="relu"))
+
+model1_split.add(tf.keras.layers.Dense(32, activation="relu"))
+
+model1_split.add(tf.keras.layers.Dense(1))
+
+model1_split.compile(optimizer=tf.keras.optimizers.Adam(lr=0.0015),
+                 loss='mean_squared_error',
+                 metrics=[tf.keras.metrics.RootMeanSquaredError()]
+                 )
+
+history_split = model1_split.fit(train_x, train_y, batch_size=1000,
+                  epochs=500, shuffle=True)
+epochs_split = history_split.epoch
+hist_split = pd.DataFrame(history_split.history)
+rmse_split = hist_split["root_mean_squared_error"]
+
+model1_split.summary()
+
+model1_split_prediction = model1_split.predict(test_x)
+```
+
+Accuracy of Model is: 0.8565038038524211
+
+Root Mean Squared Error of Model is: 6.229324285295386
+
+
+### 3.1.6 Decision Tree Regressor
+Decision-tree algorithm is a kind of supervised learning algorithms. It can be used in classification and regression problems. 
+
+**Code for Decision Tree Regressor**
+```python
+from sklearn.tree import DecisionTreeRegressor
+
+dtregressor = DecisionTreeRegressor(random_state = 0, min_samples_split=5)
+dtregressor.fit(train_x, train_y)
+y_pred_dt= dtregressor.predict(test_x)
+```
+
+Accuracy of Model is: 0.8204795438030693
+
+Root Mean Squared Error of Model is: 6.9675118677407
+
+### 3.1.7 Random Forest Regression
+
+Random Forest Regression is a type of supervised learning algorithms. It constructs multiple decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the prediction accuracy and it controls over-fitting as well. 
+
+**Code for Hyperparameter Tuning**
+```python
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.ensemble import RandomForestRegressor
+
+#Use the random grid to search for best hyperparameter
+# Number of trees in random forest
+n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
+# Number of features to consider at every split
+max_features = ['auto', 'sqrt']
+# Maximum number of levels in tree
+max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+max_depth.append(None)
+# Minimum number of samples required to split a node
+min_samples_split = [2, 5, 10]
+# Minimum number of samples required at each leaf node
+min_samples_leaf = [1, 2, 4]
+# Method of selecting samples for training each tree
+bootstrap = [True, False]
+# Create the random grid
+random_grid = {'n_estimators': n_estimators,
+               'max_features': max_features,
+               'max_depth': max_depth,
+               'min_samples_split': min_samples_split,
+               'min_samples_leaf': min_samples_leaf,
+               'bootstrap': bootstrap}
+               
+# First create the base model to tune
+rf_split = RandomForestRegressor()
+# Random search of parameters, using 3 fold cross validation, 
+# search across 100 different combinations, and use all available cores
+rf_random_split = RandomizedSearchCV(estimator = rf_split, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=None, n_jobs = -1)
+# Fit the random search model
+rf_random_split.fit(train_x, train_y)
+```
+
+The best parameters for the model is:
+
+{'n_estimators': 1200,
+ 'min_samples_split': 2,
+ 'min_samples_leaf': 1,
+ 'max_features': 'auto',
+ 'max_depth': 100,
+ 'bootstrap': True}
+ 
+ **Code for Random Forest Model**
+ ```python
+ # create a model
+ model2_split = RandomForestRegressor(n_estimators = rf_random_split.best_params_['n_estimators'],
+                               min_samples_split = rf_random_split.best_params_['min_samples_split'],
+                               min_samples_leaf = rf_random_split.best_params_['min_samples_leaf'],
+                               max_features = rf_random_split.best_params_['max_features'],
+                               max_depth = rf_random_split.best_params_['max_depth'],
+                               bootstrap = rf_random_split.best_params_['bootstrap'])
+
+model2_split.fit(train_x, train_y)
+
+model2_split_prediction = model2_split.predict(test_x)
+```
+
+Accuracy of Model is: 0.9053846430868259
+
+Root Mean Squared Error of Model is: 5.058264806966998
+
+## 3.2 Comparison and Result
+The accuracy and root mean squared error are two parameters to evaluate the model performance. The two parameters of all the seven models we used are shown in the following table.
+
+**Table: Summary of Model Performance**
+
+|         *Method*       |      Accuracy     | Root Mean Squared Error |
+|:-----------------------|:-------------:|:-------------:|
+|   Linear Regression    | 0.5177053629131334 | 11.420285520195613 |
+|      Lasso Method      | 0.38967572787640603 | 11.988560504390488 |
+|   K-nearest Neighbor   | 0.34345271643724284 | 12.434253663809674 |
+| Support Vector Machine | 0.34808748601553163 | 12.390287319386937 |
+|     Neural Network     |  0.8565038038524211 | 6.229324285295386 |
+|Decision Tree Regressor | 0.8204795438030693 | 6.9675118677407 |
+|Random Forest Regression| 0.9053846430868259 | 5.058264806966998 |
+
+
+As shown in the table, Linear Regression, Lasso Method, K-nearest Neighbor and Support Vector Machine do not perform well in predicting concrete strength. The other three methods: Neural Network, Decision Tree Regressor and Random Forest Regression are relatively better.
+
+The accuracy of Random Forest Regression and Neural Network are in the first and second place, respectively. The comparison of these two methods is as follows.
+
+- When creating a model, Neural Network is more complicated. Setting appropriate values for its parameter such as layer numbers, learning rate, batch size, etc. is extremely improtant to the performace of the model, so that it requires more efforts to find better parameters. Random Forest is much easier to find the best parameters.
+- Random Forest is less computationally expensive. It can be trained faster than Neural Network.
+- When using Neural Network, we should pay attention to avoiding overfitting. However, Random Forest is less prone to overfitting.
+
+Compared with previous studies, the linear regression and neural network models we used do not show the same level of accuracy. One reason could be that the dataset we used to train the model is not big enough. Since we split 20% of the train dataset into test dataset for evaluating model performance, the total number of data we used for training is 565 rows. In the future study, we are expected to use larger dataset to train models, hoping to get a similar accuracy.
+
+What's more, a key insight of our project is that random forest regression shows a great potential to predict concrete strength, however, it has not been used widely in previous studies. We will further confirm wether random forest regression only shows a great performance in the dataset we used or can be applied to other dataset.
+
+For this project, Random Forest Model works best. We recreate a random forest model using the whole given train dataset and use it to predict the given test dataset.
+
+**Code for Hyperparameter Tuning**
+```python
+# First create the base model to tune
+rf = RandomForestRegressor()
+# Random search of parameters, using 3 fold cross validation, 
+# search across 100 different combinations, and use all available cores
+rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=None, n_jobs = -1)
+# Fit the random search model
+rf_random.fit(x, y)
+```
+The best parameters for the model is:
+
+{'n_estimators': 600,
+ 'min_samples_split': 2,
+ 'min_samples_leaf': 2,
+ 'max_features': 'auto',
+ 'max_depth': 70,
+ 'bootstrap': True}
+ 
+**Code for recreate a model**
+```python
+model2 = RandomForestRegressor(n_estimators = rf_random.best_params_['n_estimators'],
+                               min_samples_split = rf_random.best_params_['min_samples_split'],
+                               min_samples_leaf = rf_random.best_params_['min_samples_leaf'],
+                               max_features = rf_random.best_params_['max_features'],
+                               max_depth = rf_random.best_params_['max_depth'],
+                               bootstrap = rf_random.best_params_['bootstrap'])
+
+model2.fit(x, y)
+```
+**prediction**
+**Code for recreate a model**
+```python
+prediction2 = model2.predict(test_df)
+prediction2 = pd.DataFrame(prediction2, columns=['Concrete compressive strength(MPa, megapascals)'])
+prediction2.index.name='index'
+prediction2.to_csv('prediction2.csv')
+```
+After submitting the *prediction2.csv* to Kaggle Competition, it provides a score of 5.50396 which indicates Root Mean Squared Error. We can expect a model accuracy of 85%-90% for such a score.
+
+![
+**Figure: Kaggle Competition Page**
+](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png)
+
+
+
+## Conclusion
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
@@ -426,283 +703,6 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 <i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
-
-
-
-## Method
-
-
-## 3. Discussion
-
-## 3.1 Model Training and Evaluation
-
-### 3.1.1 Linear Regression
-Linear Regression is the simplest but powerful model. In the previous studies, it was widely used in the prediction of concrete strength. This model assumes a linear relationship between independent and dependent variables.
-
-**Code for Linear Regression Model**
-```python
-from sklearn.linear_model import LinearRegression
-
-lin_reg = LinearRegression()
-lin_reg.fit(train_x, train_y)
-y_pred_lin= lin_reg.predict(test_x)
-```
-Accuracy of Model is: 0.5177053629131334
-
-Root Mean Squared Error of Model is: 11.420285520195613
-
-### 3.1.2 Lasso Method
-The Lasso is a shrinkage and selection method for linear regression. It minimizes the usual sum of squared errors, with a bound on the sum of the absolute values of the coefficients. 
-
-**Code for Lasso Model**
-```python
-from sklearn.linear_model import Lasso   
-
-las = Lasso(alpha=0.1)
-model2 = las.fit(train_x, train_y)
-predictions2 = las.predict(test_x)
-```
-Accuracy of Model is: 0.38967572787640603
-
-Root Mean Squared Error of Model is: 11.988560504390488
-
-### 3.1.3 K-nearest Neighbor
-The k-nearest neighbor is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems.
-
-**Code for K-nearest Neighbor Model**
-```python
-from sklearn.neighbors import KNeighborsRegressor
-
-knn = KNeighborsRegressor()
-model3=knn.fit(train_x, train_y)
-predictions3 = knn.predict(test_x)
-```
-Accuracy of Model is: 0.34345271643724284
-
-Root Mean Squared Error of Model is: 12.434253663809674
-
-### 3.1.4 Support Vector Machine
-Support vector machine is a supervised machine learning algorithm used for classification, regression and outlier detection. We use a linear Support Vector Machine model.
-
-**Code for Support Vector Machine Model**
-```python
-from sklearn.svm import SVR 
-
-svm= SVR(kernel='linear')
-model4=svm.fit(train_x, train_y)
-predictions4 = svm.predict(test_x)
-```
-Accuracy of Model is: 0.34808748601553163
-
-Root Mean Squared Error of Model is: 12.390287319386937
-
-### 3.1.5 Neural Network
-Neural Nework is also used in previous studies to predict concrete strength. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data. A neural network consists of input layer, hidden layers and output layer. It’s able to learn and model non-linear and complex relationships between independent and dependent variables.
-
-**Code for Neural Network Model**
-```python
-import tensorflow as tf
-
-layer_width = 128
-l1 = 0.0
-l2 = 0.05
-
-model1_split = tf.keras.Sequential()
-
-model1_split.add(tf.keras.layers.Dense(512, activation="relu", kernel_regularizer = tf.keras.regularizers.l1_l2(l1=l1, l2=l2)))
-model1_split.add(tf.keras.layers.BatchNormalization())
-model1_split.add(tf.keras.layers.Dense(256, activation="relu"))
-model1_split.add(tf.keras.layers.BatchNormalization())
-model1_split.add(tf.keras.layers.Dense(128, activation="relu"))
-model1_split.add(tf.keras.layers.BatchNormalization())
-model1_split.add(tf.keras.layers.Dense(128, activation="relu"))
-
-model1_split.add(tf.keras.layers.Dense(32, activation="relu"))
-
-model1_split.add(tf.keras.layers.Dense(1))
-
-model1_split.compile(optimizer=tf.keras.optimizers.Adam(lr=0.0015),
-                 loss='mean_squared_error',
-                 metrics=[tf.keras.metrics.RootMeanSquaredError()]
-                 )
-
-history_split = model1_split.fit(train_x, train_y, batch_size=1000,
-                  epochs=500, shuffle=True)
-epochs_split = history_split.epoch
-hist_split = pd.DataFrame(history_split.history)
-rmse_split = hist_split["root_mean_squared_error"]
-
-model1_split.summary()
-
-model1_split_prediction = model1_split.predict(test_x)
-```
-
-Accuracy of Model is: 0.8565038038524211
-
-Root Mean Squared Error of Model is: 6.229324285295386
-
-
-### 3.1.6 Decision Tree Regressor
-Decision-tree algorithm is a kind of supervised learning algorithms. It can be used in classification and regression problems. 
-
-**Code for Decision Tree Regressor**
-```python
-from sklearn.tree import DecisionTreeRegressor
-
-dtregressor = DecisionTreeRegressor(random_state = 0, min_samples_split=5)
-dtregressor.fit(train_x, train_y)
-y_pred_dt= dtregressor.predict(test_x)
-```
-
-Accuracy of Model is: 0.8204795438030693
-
-Root Mean Squared Error of Model is: 6.9675118677407
-
-### 3.1.7 Random Forest Regression
-
-Random Forest Regression is a type of supervised learning algorithms. It constructs multiple decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the prediction accuracy and it controls over-fitting as well. 
-
-**Code for Hyperparameter Tuning**
-```python
-from sklearn.model_selection import RandomizedSearchCV
-from sklearn.ensemble import RandomForestRegressor
-
-#Use the random grid to search for best hyperparameter
-# Number of trees in random forest
-n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
-# Number of features to consider at every split
-max_features = ['auto', 'sqrt']
-# Maximum number of levels in tree
-max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-max_depth.append(None)
-# Minimum number of samples required to split a node
-min_samples_split = [2, 5, 10]
-# Minimum number of samples required at each leaf node
-min_samples_leaf = [1, 2, 4]
-# Method of selecting samples for training each tree
-bootstrap = [True, False]
-# Create the random grid
-random_grid = {'n_estimators': n_estimators,
-               'max_features': max_features,
-               'max_depth': max_depth,
-               'min_samples_split': min_samples_split,
-               'min_samples_leaf': min_samples_leaf,
-               'bootstrap': bootstrap}
-               
-# First create the base model to tune
-rf_split = RandomForestRegressor()
-# Random search of parameters, using 3 fold cross validation, 
-# search across 100 different combinations, and use all available cores
-rf_random_split = RandomizedSearchCV(estimator = rf_split, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=None, n_jobs = -1)
-# Fit the random search model
-rf_random_split.fit(train_x, train_y)
-```
-
-The best parameters for the model is:
-
-{'n_estimators': 1200,
- 'min_samples_split': 2,
- 'min_samples_leaf': 1,
- 'max_features': 'auto',
- 'max_depth': 100,
- 'bootstrap': True}
- 
- **Code for Random Forest Model**
- ```python
- # create a model
- model2_split = RandomForestRegressor(n_estimators = rf_random_split.best_params_['n_estimators'],
-                               min_samples_split = rf_random_split.best_params_['min_samples_split'],
-                               min_samples_leaf = rf_random_split.best_params_['min_samples_leaf'],
-                               max_features = rf_random_split.best_params_['max_features'],
-                               max_depth = rf_random_split.best_params_['max_depth'],
-                               bootstrap = rf_random_split.best_params_['bootstrap'])
-
-model2_split.fit(train_x, train_y)
-
-model2_split_prediction = model2_split.predict(test_x)
-```
-
-Accuracy of Model is: 0.9053846430868259
-
-Root Mean Squared Error of Model is: 5.058264806966998
-
-## 3.2 Comparison and Result
-The accuracy and root mean squared error are two parameters to evaluate the model performance. The two parameters of all the seven models we used are shown in the following table.
-
-**Table: Summary of Model Performance**
-
-|         *Method*       |      Accuracy     | Root Mean Squared Error |
-|:-----------------------|:-------------:|:-------------:|
-|   Linear Regression    | 0.5177053629131334 | 11.420285520195613 |
-|      Lasso Method      | 0.38967572787640603 | 11.988560504390488 |
-|   K-nearest Neighbor   | 0.34345271643724284 | 12.434253663809674 |
-| Support Vector Machine | 0.34808748601553163 | 12.390287319386937 |
-|     Neural Network     |  0.8565038038524211 | 6.229324285295386 |
-|Decision Tree Regressor | 0.8204795438030693 | 6.9675118677407 |
-|Random Forest Regression| 0.9053846430868259 | 5.058264806966998 |
-
-
-As shown in the table, Linear Regression, Lasso Method, K-nearest Neighbor and Support Vector Machine do not perform well in predicting concrete strength. The other three methods: Neural Network, Decision Tree Regressor and Random Forest Regression are relatively better.
-
-The accuracy of Random Forest Regression and Neural Network are in the first and second place, respectively. The comparison of these two methods is as follows.
-
-- When creating a model, Neural Network is more complicated. Setting appropriate values for its parameter such as layer numbers, learning rate, batch size, etc. is extremely improtant to the performace of the model, so that it requires more efforts to find better parameters. Random Forest is much easier to find the best parameters.
-- Random Forest is less computationally expensive. It can be trained faster than Neural Network.
-- When using Neural Network, we should pay attention to avoiding overfitting. However, Random Forest is less prone to overfitting.
-
-Compared with previous studies, the linear regression and neural network models we used do not show the same level of accuracy. One reason could be that the dataset we used to train the model is not big enough. Since we split 20% of the train dataset into test dataset for evaluating model performance, the total number of data we used for training is 565 rows. In the future study, we are expected to use larger dataset to train models, hoping to get a similar accuracy.
-
-What's more, a key insight of our project is that random forest regression shows a great potential to predict concrete strength, however, it has not been used widely in previous studies. We will further confirm wether random forest regression only shows a great performance in the dataset we used or can be applied to other dataset.
-
-For this project, Random Forest Model works best. We recreate a random forest model using the whole given train dataset and use it to predict the given test dataset.
-
-**Code for Hyperparameter Tuning**
-```python
-# First create the base model to tune
-rf = RandomForestRegressor()
-# Random search of parameters, using 3 fold cross validation, 
-# search across 100 different combinations, and use all available cores
-rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=None, n_jobs = -1)
-# Fit the random search model
-rf_random.fit(x, y)
-```
-The best parameters for the model is:
-
-{'n_estimators': 600,
- 'min_samples_split': 2,
- 'min_samples_leaf': 2,
- 'max_features': 'auto',
- 'max_depth': 70,
- 'bootstrap': True}
- 
-**Code for recreate a model**
-```python
-model2 = RandomForestRegressor(n_estimators = rf_random.best_params_['n_estimators'],
-                               min_samples_split = rf_random.best_params_['min_samples_split'],
-                               min_samples_leaf = rf_random.best_params_['min_samples_leaf'],
-                               max_features = rf_random.best_params_['max_features'],
-                               max_depth = rf_random.best_params_['max_depth'],
-                               bootstrap = rf_random.best_params_['bootstrap'])
-
-model2.fit(x, y)
-```
-**prediction**
-**Code for recreate a model**
-```python
-prediction2 = model2.predict(test_df)
-prediction2 = pd.DataFrame(prediction2, columns=['Concrete compressive strength(MPa, megapascals)'])
-prediction2.index.name='index'
-prediction2.to_csv('prediction2.csv')
-```
-After submitting the *prediction2.csv* to Kaggle Competition, it provides a score of 5.50396 which indicates Root Mean Squared Error. We can expect a model accuracy of 85%-90% for such a score.
-
-![
-**Figure: Kaggle Competition Page**
-](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png)
-
-
-
-## Conclusion
 
 
 ## References {.page_break_before}
