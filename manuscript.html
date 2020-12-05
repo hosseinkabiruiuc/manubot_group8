@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/1bab0f40bea3840e3c6234d123dcf14735fb0551">qinyuz2/project3@1bab0f4</a>
+from <a href="https://github.com/qinyuz2/project3/tree/f8f142301cb48bbc3a28d7a3b8b1376c757e7827">qinyuz2/project3@f8f1423</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -366,7 +366,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:5c0c5ec8-947d-4899-912a-754e90951f10" class="tablenos">
+<div id="tbl:e9e13d15-a91c-418e-912d-cd944600b5c3" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -594,6 +594,58 @@ useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></s
 <span id="cb10-11"><a href="#cb10-11"></a>model2_split_prediction <span class="op">=</span> model2_split.predict(test_x)</span></code></pre></div>
 <p>Accuracy of Model is: 0.9053846430868259</p>
 <p>Root Mean Squared Error of Model is: 5.058264806966998</p>
+<h2 id="comparison-and-result">3.2 Comparison and Result</h2>
+<p>The accuracy and root mean squared error are two parameters to evaluate the model performance. The two parameters of all the seven models we used are shown in the following table.</p>
+<div id="tbl:Method" class="tablenos">
+<table>
+<caption><span>Table 4:</span> Summary of Model Performance
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><em>Method</em></th>
+<th style="text-align: center;">Accuracy</th>
+<th style="text-align: center;">Root Mean Squared Error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Linear Regression</td>
+<td style="text-align: center;">0.5177053629131334</td>
+<td style="text-align: center;">11.420285520195613</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lasso Method</td>
+<td style="text-align: center;">0.38967572787640603</td>
+<td style="text-align: center;">11.988560504390488</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">K-nearest Neighbor</td>
+<td style="text-align: center;">0.34345271643724284</td>
+<td style="text-align: center;">12.434253663809674</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Support Vector Machine</td>
+<td style="text-align: center;">0.34808748601553163</td>
+<td style="text-align: center;">12.390287319386937</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Neural Network</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">202</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Decision Tree Regressor</td>
+<td style="text-align: center;">0.8204795438030693</td>
+<td style="text-align: center;">6.9675118677407</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Random Forest Regression</td>
+<td style="text-align: center;">0.9053846430868259</td>
+<td style="text-align: center;">5.058264806966998</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="conclusion">Conclusion</h2>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->

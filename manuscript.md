@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/1bab0f40bea3840e3c6234d123dcf14735fb0551/))
+([permalink](https://qinyuz2.github.io/project3/v/f8f142301cb48bbc3a28d7a3b8b1376c757e7827/))
 was automatically generated
-from [qinyuz2/project3@1bab0f4](https://github.com/qinyuz2/project3/tree/1bab0f40bea3840e3c6234d123dcf14735fb0551)
+from [qinyuz2/project3@f8f1423](https://github.com/qinyuz2/project3/tree/f8f142301cb48bbc3a28d7a3b8b1376c757e7827)
 on December 5, 2020.
 </em></small>
 
@@ -624,6 +624,21 @@ Accuracy of Model is: 0.9053846430868259
 
 Root Mean Squared Error of Model is: 5.058264806966998
 
+## 3.2 Comparison and Result
+The accuracy and root mean squared error are two parameters to evaluate the model performance. The two parameters of all the seven models we used are shown in the following table.
+
+|         *Method*       |      Accuracy     | Root Mean Squared Error |
+|:-----------------------|:-------------:|:-------------:|
+|   Linear Regression    | 0.5177053629131334 | 11.420285520195613 |
+|      Lasso Method      | 0.38967572787640603 | 11.988560504390488 |
+|   K-nearest Neighbor   | 0.34345271643724284 | 12.434253663809674 |
+| Support Vector Machine | 0.34808748601553163 | 12.390287319386937 |
+|     Neural Network     |  98 | 202 |
+|Decision Tree Regressor | 0.8204795438030693 | 6.9675118677407 |
+|Random Forest Regression| 0.9053846430868259 | 5.058264806966998 |
+
+Table: Summary of Model Performance
+{#tbl:Method}
 
 
 ## Conclusion
