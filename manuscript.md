@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/59213c495027ad4f6e8206208c5df05e41a80bba/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/788609667182abf3d0f7ff0c9263c18472f87178/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/59213c495027ad4f6e8206208c5df05e41a80bba/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/788609667182abf3d0f7ff0c9263c18472f87178/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/59213c495027ad4f6e8206208c5df05e41a80bba/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/788609667182abf3d0f7ff0c9263c18472f87178/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/59213c495027ad4f6e8206208c5df05e41a80bba/))
+([permalink](https://qinyuz2.github.io/project3/v/788609667182abf3d0f7ff0c9263c18472f87178/))
 was automatically generated
-from [qinyuz2/project3@59213c4](https://github.com/qinyuz2/project3/tree/59213c495027ad4f6e8206208c5df05e41a80bba)
+from [qinyuz2/project3@7886096](https://github.com/qinyuz2/project3/tree/788609667182abf3d0f7ff0c9263c18472f87178)
 on December 5, 2020.
 </em></small>
 
@@ -311,7 +311,8 @@ The best parameters for the model is:
  'max_depth': 100,
  'bootstrap': True}
  
- **Code for Random Forest Model**
+
+**Code for Random Forest Model**
 ```python
 # create a model
 model2_split = RandomForestRegressor(n_estimators = rf_random_split.best_params_['n_estimators'],
@@ -325,6 +326,7 @@ model2_split.fit(train_x, train_y)
 
 model2_split_prediction = model2_split.predict(test_x)
 ```
+
 
 Accuracy of Model is: 0.9053846430868259
 
@@ -379,7 +381,7 @@ The best parameters for the model is:
  'max_depth': 70,
  'bootstrap': True}
  
-**Code for recreate a model**
+ **Code for recreate a model**
 ```python
 model2 = RandomForestRegressor(n_estimators = rf_random.best_params_['n_estimators'],
                                min_samples_split = rf_random.best_params_['min_samples_split'],
@@ -400,9 +402,7 @@ prediction2.to_csv('prediction2.csv')
 ```
 After submitting the *prediction2.csv* to Kaggle Competition, it provides a score of 5.50396 which indicates Root Mean Squared Error. We can expect a model accuracy of 85%-90% for such a score.
 
-![
-**Figure: Kaggle Competition Page**
-](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png "Wide image"){#fig:wide-image}
+![**Figure: Kaggle Competition Page**](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png "Wide image")
 
 
 ## 4. Conclusion
