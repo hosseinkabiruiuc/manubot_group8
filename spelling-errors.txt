@@ -24,7 +24,6 @@ Excepteur
 exercitation
 fugiat
 Hyperparameter
-improtant
 incididunt
 ipsum
 irure
@@ -42,15 +41,15 @@ nostrud
 nulla
 occaecat
 officia
-overfitting
 Pandoc’s
+params
 pariatur
-performace
 proident
 Qinyu
 qinyuz
 qui
 quis
+RandomForestRegressor
 Regressor
 reprehenderit
 sed
@@ -62,6 +61,5 @@ Urbana
 velit
 veniam
 voluptate
-wether
 XXXX
 Zhang
