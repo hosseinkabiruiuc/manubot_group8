@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/b88f99c005d186adbcd64f60eb7e6ff401d08e48/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/b88f99c005d186adbcd64f60eb7e6ff401d08e48/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/b88f99c005d186adbcd64f60eb7e6ff401d08e48/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/b88f99c005d186adbcd64f60eb7e6ff401d08e48/))
+([permalink](https://qinyuz2.github.io/project3/v/4593683a25d1750df6729d0e895f529738bfce60/))
 was automatically generated
-from [qinyuz2/project3@b88f99c](https://github.com/qinyuz2/project3/tree/b88f99c005d186adbcd64f60eb7e6ff401d08e48)
+from [qinyuz2/project3@4593683](https://github.com/qinyuz2/project3/tree/4593683a25d1750df6729d0e895f529738bfce60)
 on December 5, 2020.
 </em></small>
 
@@ -698,7 +698,7 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 
 ![
 **Figure: Kaggle Competition Page**
-](https://github.com/qinyuz2/project3/content/images/Kaggle.png)
+](https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png)
 
 
 
