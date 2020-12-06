@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/))
+([permalink](https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/))
 was automatically generated
-from [qinyuz2/project3@9320c72](https://github.com/qinyuz2/project3/tree/9320c7247c74d1925b98b065d660ebefddf09913)
+from [qinyuz2/project3@02184f2](https://github.com/qinyuz2/project3/tree/02184f2899c7b1653ed658e3c2097c5dc59bf2a9)
 on December 6, 2020.
 </em></small>
 
@@ -157,6 +157,8 @@ The observations and comments that can be made from the above box plot is as fol
 2: The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.
 
 Dsitribution of the variables in the dataset have been plotted to gain better understanding. 
+
+![EDA-8](https://user-images.githubusercontent.com/70567674/101285838-00f72980-37ad-11eb-8b71-cbc0c7192b52.png)
 
 
 ## 3. Discussion
