@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/bc1bf6d5d17369cad046cf95b2f4b1340b1aa5dd/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/bc1bf6d5d17369cad046cf95b2f4b1340b1aa5dd/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/bc1bf6d5d17369cad046cf95b2f4b1340b1aa5dd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/bc1bf6d5d17369cad046cf95b2f4b1340b1aa5dd/))
+([permalink](https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/))
 was automatically generated
-from [qinyuz2/project3@bc1bf6d](https://github.com/qinyuz2/project3/tree/bc1bf6d5d17369cad046cf95b2f4b1340b1aa5dd)
+from [qinyuz2/project3@3102c53](https://github.com/qinyuz2/project3/tree/3102c5351ddaf4777d2d317116f4eee1eaae48ae)
 on December 6, 2020.
 </em></small>
 
@@ -145,7 +145,16 @@ Exploratory Data Analysis is done in order to analyze the data used for the proj
 
 ![EDA-4](https://user-images.githubusercontent.com/70567674/101285512-3438b900-37ab-11eb-9cfa-367bdb3f6a17.png)
 
-![EDA-5](https://user-images.githubusercontent.com/70567674/101285603-c17c0d80-37ab-11eb-994f-b7db131bd6dd.png)
+Box plot analysis was performed:
+
+![EDA-6](https://user-images.githubusercontent.com/70567674/101285748-7f070080-37ac-11eb-8808-78d668158a8a.png)
+
+
+The observations and comments that can be made from the above box plot is as follows:
+
+1:The data in cement, slag, ash doesn't appear to have any significant outliers.
+
+2: The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.
 
 
 ## 3. Discussion
