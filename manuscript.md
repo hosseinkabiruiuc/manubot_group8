@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/32871045c8b6670b62c169c148e9a69d3a59ec93/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/90e814845d08c6b92540173a15a199bb0a1a1633/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/32871045c8b6670b62c169c148e9a69d3a59ec93/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/90e814845d08c6b92540173a15a199bb0a1a1633/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/32871045c8b6670b62c169c148e9a69d3a59ec93/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/90e814845d08c6b92540173a15a199bb0a1a1633/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/32871045c8b6670b62c169c148e9a69d3a59ec93/))
+([permalink](https://qinyuz2.github.io/project3/v/90e814845d08c6b92540173a15a199bb0a1a1633/))
 was automatically generated
-from [qinyuz2/project3@3287104](https://github.com/qinyuz2/project3/tree/32871045c8b6670b62c169c148e9a69d3a59ec93)
+from [qinyuz2/project3@90e8148](https://github.com/qinyuz2/project3/tree/90e814845d08c6b92540173a15a199bb0a1a1633)
 on December 6, 2020.
 </em></small>
 
@@ -515,7 +515,8 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 
 ## 4. Conclusion
 
-From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.  
+From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
+Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials. 
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
