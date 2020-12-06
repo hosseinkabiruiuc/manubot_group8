@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/))
+([permalink](https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/))
 was automatically generated
-from [qinyuz2/project3@5889c22](https://github.com/qinyuz2/project3/tree/5889c228ed37595d98aef556f7cb465d6d501252)
+from [qinyuz2/project3@054b04a](https://github.com/qinyuz2/project3/tree/054b04ab5fc70aa49bd55eb19ef579be4a33e998)
 on December 6, 2020.
 </em></small>
 
@@ -134,7 +134,10 @@ The second most consumed substance in the world after water is concrete. Current
 
 
 ## 2. Method
-Exploratory Data Analysis is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data. 
+
+# Exploratory Data Analysis
+
+It is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data. 
 
 
 ![EDA-1](https://user-images.githubusercontent.com/70567674/101285201-8bd62500-37a9-11eb-830e-7e12e48d8f6a.png)
@@ -177,6 +180,21 @@ The observations and comments that can be made from the distribution plots and s
 3: The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.
 
 ![EDA-12](https://user-images.githubusercontent.com/70567674/101286086-3cdebe80-37ae-11eb-9f4c-0a12fcd5dade.png)
+
+![EDA-13](https://user-images.githubusercontent.com/70567674/101286114-60096e00-37ae-11eb-8b35-01ecd5916160.png)
+
+The observations and comments that can be made from the pair plots is as follows:
+
+1: There is strong positive correlation between cement and strength which seems theoretically consistent.
+
+2: In addition age also has a strong positive correlation to strength.
+
+3: Water and strength have a negative correlation which aagain seems theoretically consistent.
+
+4: Water and superplastic have a negeative correlation.
+
+5: Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren't the best predctors of strength.
+
 
 
 ## 3. Discussion
