@@ -1,24 +1,6 @@
 [
 {
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "The effect of internal parameters and geometry on the performance of back-propagation neural networks: an empirical study",
-  "container-title": "Environmental Modelling & Software",
-  "issued": {
-    "date-parts": [
-      [
-        1998,13, 193-209
-      ]
-    ]
-  },
-  "authors": [
-    {
-      "given": "Maier",
-      "family": "H"
-    }
-    {
-      "given": "Dany",
-      "family": "G. C."
-    }
-  ]
+ @Yeh I.C. (1998)]:doi: "https://doi.org/10.1016/S0008-8846(98)00165-3"
+  
 }
 ]
