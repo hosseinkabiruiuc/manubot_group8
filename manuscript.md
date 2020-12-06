@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/02184f2899c7b1653ed658e3c2097c5dc59bf2a9/))
+([permalink](https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/))
 was automatically generated
-from [qinyuz2/project3@02184f2](https://github.com/qinyuz2/project3/tree/02184f2899c7b1653ed658e3c2097c5dc59bf2a9)
+from [qinyuz2/project3@f2a9c1b](https://github.com/qinyuz2/project3/tree/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8)
 on December 6, 2020.
 </em></small>
 
@@ -159,6 +159,14 @@ The observations and comments that can be made from the above box plot is as fol
 Dsitribution of the variables in the dataset have been plotted to gain better understanding. 
 
 ![EDA-8](https://user-images.githubusercontent.com/70567674/101285838-00f72980-37ad-11eb-8b71-cbc0c7192b52.png)
+
+![EDA-9](https://user-images.githubusercontent.com/70567674/101285875-4ae00f80-37ad-11eb-9b39-14df99a7f17a.png)
+
+Distribution plot for strength variable 
+
+![EDA-10](https://user-images.githubusercontent.com/70567674/101285965-aa3e1f80-37ad-11eb-913b-630c445d0253.png)
+
+![EDA-11](https://user-images.githubusercontent.com/70567674/101286026-f12c1500-37ad-11eb-9c9c-b8a90ac10e12.png)
 
 
 ## 3. Discussion
