@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/dbbf09deeab598f335b34a325424248b1bba92d3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/dbbf09deeab598f335b34a325424248b1bba92d3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/dbbf09deeab598f335b34a325424248b1bba92d3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/))
+([permalink](https://qinyuz2.github.io/project3/v/dbbf09deeab598f335b34a325424248b1bba92d3/))
 was automatically generated
-from [qinyuz2/project3@2b24aea](https://github.com/qinyuz2/project3/tree/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b)
+from [qinyuz2/project3@dbbf09d](https://github.com/qinyuz2/project3/tree/dbbf09deeab598f335b34a325424248b1bba92d3)
 on December 6, 2020.
 </em></small>
 
@@ -129,7 +129,13 @@ on December 6, 2020.
 
 ## Introduction 
 
-The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production itself is highly energy intensive process. In 2015, it generated around 2.8 billion of CO2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time. 
+The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production is highly energy intensive process. In 2015, it generated around 2.8 billion of CO2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time. Also, small human error in designing or preparing can lead to drastic change in strength and increase the waiting time. 
+Recently, researchers are developing models using machine learning and artificial neural network to predict the compressive strength of concrete. This is very useful in predicting the performance using complex non-linear relations.   
+
+### Problem Statement
+
+Since conventional methods for checking the performance of concrete are time consuming and prone to human error. This project aims to predict the compressive strength of concrete using different emerging soft computer techniques like Linear Regression, Lasso Regression, Artificial Neural Network, Random Forest, and Decision Tree Regression. A comparison is made using the root mean square error and model with better performance was chosen. 
+The dataset was collected from UCI Machine Learning Repository. It has total 1030 instances with 9 attributes (8 quantitative input variable and 1 quantitative output variables). The eight independent variables are: cement (kg/m3), blast furnace slag (kg/m3), fly ash (kg/m3), water (kg/m3), superplasticizer (kg/m3), coarse aggregates (kg/m3), fine aggregates (kg/m3), and age of curing (days). The dependent/output variable is compressive strength in MPa. 
 
 
 

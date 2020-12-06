@@ -1,3 +1,10 @@
+content/01.Introduction.md:4:compressive
+content/01.Introduction.md:8:compressive
+content/01.Introduction.md:9:compressive
+content/01.Introduction.md:9:dataset
+content/01.Introduction.md:9:MPa
+content/01.Introduction.md:9:superplasticizer
+content/01.Introduction.md:9:UCI
 content/02.Method.md:6:libraires
 content/02.Method.md:9:EDA
 content/02.Method.md:11:EDA
@@ -49,6 +56,8 @@ content/03.Discussion.md:223:wether
 content/03.Discussion.md:225:dataset
 content/03.Discussion.md:225:dataset
 content/03.Discussion.md:227:Hyperparameter
+content/03.Discussion.md:261:compressive
+content/03.Discussion.md:261:MPa
 content/03.Discussion.md:263:csv
 content/03.Discussion.md:265:csv
 content/03.Discussion.md:265:Kaggle
