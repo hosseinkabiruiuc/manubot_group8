@@ -13,6 +13,9 @@ content/02.Method.md:27:EDA
 content/02.Method.md:29:EDA
 content/02.Method.md:33:EDA
 content/02.Method.md:35:EDA
+content/02.Method.md:37:degreee
+content/02.Method.md:37:skewness
+content/02.Method.md:45:EDA
 content/03.Discussion.md:66:Nework
 content/03.Discussion.md:111:Regressor
 content/03.Discussion.md:114:Regressor

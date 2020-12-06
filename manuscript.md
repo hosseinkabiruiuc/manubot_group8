@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8/))
+([permalink](https://qinyuz2.github.io/project3/v/5889c228ed37595d98aef556f7cb465d6d501252/))
 was automatically generated
-from [qinyuz2/project3@f2a9c1b](https://github.com/qinyuz2/project3/tree/f2a9c1baa4abafbfc8b4053218a09a1a644d6ca8)
+from [qinyuz2/project3@5889c22](https://github.com/qinyuz2/project3/tree/5889c228ed37595d98aef556f7cb465d6d501252)
 on December 6, 2020.
 </em></small>
 
@@ -167,6 +167,16 @@ Distribution plot for strength variable
 ![EDA-10](https://user-images.githubusercontent.com/70567674/101285965-aa3e1f80-37ad-11eb-913b-630c445d0253.png)
 
 ![EDA-11](https://user-images.githubusercontent.com/70567674/101286026-f12c1500-37ad-11eb-9c9c-b8a90ac10e12.png)
+
+The observations and comments that can be made from the distribution plots and skewness degreee data is as follows:
+
+1: The strength data is normally distributed.
+
+2: Water and cement data seems to be very near to being normally distributed.
+
+3: The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.
+
+![EDA-12](https://user-images.githubusercontent.com/70567674/101286086-3cdebe80-37ae-11eb-9f4c-0a12fcd5dade.png)
 
 
 ## 3. Discussion

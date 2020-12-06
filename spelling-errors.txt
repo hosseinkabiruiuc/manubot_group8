@@ -15,6 +15,7 @@ csv
 culpa
 cupidatat
 dataset
+degreee
 deserunt
 dolore
 Dsitribution
@@ -60,6 +61,7 @@ Regressor
 reprehenderit
 sed
 sint
+skewness
 sunt
 superplastic
 tempor
