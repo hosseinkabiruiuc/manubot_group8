@@ -7,12 +7,12 @@
       "Civil Engineering"
     ],
     "lang": "en-US",
-    "date-meta": "2020-12-05",
+    "date-meta": "2020-12-06",
     "author-meta": [
       "Qinyu Zhang",
       "Jane Roe"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"citation_title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"og:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"twitter:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-05\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-05\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Qinyu Zhang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"og:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"twitter:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_pdf_url\" content=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://qinyuz2.github.io/project3/v/1d95359eb154b69d4b472961defd6c3c024f1ce5/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/1d95359eb154b69d4b472961defd6c3c024f1ce5/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/1d95359eb154b69d4b472961defd6c3c024f1ce5/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"citation_title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"og:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"twitter:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-06\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Qinyu Zhang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"og:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"twitter:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_pdf_url\" content=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,7 +22,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "December 5, 2020",
+    "date": "December 6, 2020",
     "authors": [
       {
         "github": "qinyuz2",
@@ -71,19 +71,19 @@
       "repo_slug": "qinyuz2/project3",
       "repo_owner": "qinyuz2",
       "repo_name": "project3",
-      "commit": "1d95359eb154b69d4b472961defd6c3c024f1ce5",
-      "triggering_commit": "1d95359eb154b69d4b472961defd6c3c024f1ce5",
-      "build_url": "https://github.com/qinyuz2/project3/commit/1d95359eb154b69d4b472961defd6c3c024f1ce5/checks",
+      "commit": "cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed",
+      "triggering_commit": "cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed",
+      "build_url": "https://github.com/qinyuz2/project3/commit/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/checks",
       "job_url": "https://github.com/qinyuz2/project3/runs/run3"
     },
     "html_url": "https://qinyuz2.github.io/project3/",
     "pdf_url": "https://qinyuz2.github.io/project3/manuscript.pdf",
-    "html_url_versioned": "https://qinyuz2.github.io/project3/v/1d95359eb154b69d4b472961defd6c3c024f1ce5/",
-    "pdf_url_versioned": "https://qinyuz2.github.io/project3/v/1d95359eb154b69d4b472961defd6c3c024f1ce5/manuscript.pdf",
+    "html_url_versioned": "https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/",
+    "pdf_url_versioned": "https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
-      "word_count": 2778
+      "word_count": 2951
     }
   }
 }
