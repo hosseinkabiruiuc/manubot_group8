@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/0335dcf06ca07a0454938a26e7db6c0bab03daee/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/d493baab14ae8c9e510c91f8cfb4929f1e9e1b78/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/0335dcf06ca07a0454938a26e7db6c0bab03daee/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/d493baab14ae8c9e510c91f8cfb4929f1e9e1b78/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/0335dcf06ca07a0454938a26e7db6c0bab03daee/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/d493baab14ae8c9e510c91f8cfb4929f1e9e1b78/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/0335dcf06ca07a0454938a26e7db6c0bab03daee/))
+([permalink](https://qinyuz2.github.io/project3/v/d493baab14ae8c9e510c91f8cfb4929f1e9e1b78/))
 was automatically generated
-from [qinyuz2/project3@0335dcf](https://github.com/qinyuz2/project3/tree/0335dcf06ca07a0454938a26e7db6c0bab03daee)
+from [qinyuz2/project3@d493baa](https://github.com/qinyuz2/project3/tree/d493baab14ae8c9e510c91f8cfb4929f1e9e1b78)
 on December 6, 2020.
 </em></small>
 
@@ -142,6 +142,8 @@ Exploratory Data Analysis is done in order to analyze the data used for the proj
  ![EDA-2](https://user-images.githubusercontent.com/70567674/101285383-7f060100-37aa-11eb-9f25-89ff8deffd1c.png)
  
 ![EDA-3](https://user-images.githubusercontent.com/70567674/101285458-defca780-37aa-11eb-8f60-8773a5024f82.png)
+
+![EDA-4](https://user-images.githubusercontent.com/70567674/101285512-3438b900-37ab-11eb-9cfa-367bdb3f6a17.png)
 
 
 ## 3. Discussion
