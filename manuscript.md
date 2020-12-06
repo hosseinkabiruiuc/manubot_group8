@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/f07e137865a4b420a47cdf00ddda0b0674b75b9a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/f07e137865a4b420a47cdf00ddda0b0674b75b9a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/f07e137865a4b420a47cdf00ddda0b0674b75b9a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed/))
+([permalink](https://qinyuz2.github.io/project3/v/f07e137865a4b420a47cdf00ddda0b0674b75b9a/))
 was automatically generated
-from [qinyuz2/project3@cba62a6](https://github.com/qinyuz2/project3/tree/cba62a671fe8bafcb58b2e188e9dc2b9416fb3ed)
+from [qinyuz2/project3@f07e137](https://github.com/qinyuz2/project3/tree/f07e137865a4b420a47cdf00ddda0b0674b75b9a)
 on December 6, 2020.
 </em></small>
 
@@ -127,7 +127,7 @@ on December 6, 2020.
 
 
 
-## Introduction {.page_break_before}
+## Introduction 
 
 The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production itself is highly energy intensive process. In 2015, it generated around 2.8 billion of CO2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time. 
 
