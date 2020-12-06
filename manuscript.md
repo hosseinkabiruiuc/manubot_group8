@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/3102c5351ddaf4777d2d317116f4eee1eaae48ae/))
+([permalink](https://qinyuz2.github.io/project3/v/9320c7247c74d1925b98b065d660ebefddf09913/))
 was automatically generated
-from [qinyuz2/project3@3102c53](https://github.com/qinyuz2/project3/tree/3102c5351ddaf4777d2d317116f4eee1eaae48ae)
+from [qinyuz2/project3@9320c72](https://github.com/qinyuz2/project3/tree/9320c7247c74d1925b98b065d660ebefddf09913)
 on December 6, 2020.
 </em></small>
 
@@ -155,6 +155,8 @@ The observations and comments that can be made from the above box plot is as fol
 1:The data in cement, slag, ash doesn't appear to have any significant outliers.
 
 2: The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.
+
+Dsitribution of the variables in the dataset have been plotted to gain better understanding. 
 
 
 ## 3. Discussion
