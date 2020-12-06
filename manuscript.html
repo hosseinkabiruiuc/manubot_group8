@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/054b04ab5fc70aa49bd55eb19ef579be4a33e998">qinyuz2/project3@054b04a</a>
+from <a href="https://github.com/qinyuz2/project3/tree/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b">qinyuz2/project3@2b24aea</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -159,7 +159,7 @@ Department of Something, University of Whatever; Department of Whatever, Univers
 <h2 id="introduction">Introduction</h2>
 <p>The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production itself is highly energy intensive process. In 2015, it generated around 2.8 billion of CO2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time.</p>
 <h2 id="method">2. Method</h2>
-<h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>It is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data.</p>
 <figure>
 <img src="https://user-images.githubusercontent.com/70567674/101285201-8bd62500-37a9-11eb-830e-7e12e48d8f6a.png" alt="" /><figcaption>EDA-1</figcaption>
@@ -210,6 +210,13 @@ Department of Something, University of Whatever; Department of Whatever, Univers
 <p>3: Water and strength have a negative correlation which aagain seems theoretically consistent.</p>
 <p>4: Water and superplastic have a negeative correlation.</p>
 <p>5: Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren’t the best predctors of strength.</p>
+<figure>
+<img src="https://user-images.githubusercontent.com/70567674/101286307-52a0b380-37af-11eb-955a-81c8de20c544.png" alt="" /><figcaption>EDA-14</figcaption>
+</figure>
+<p>The observations and comments that can be made from the heat map is as follows:</p>
+<p>1: Cement and age have strong correlation with strength</p>
+<p>2: Water and superplastic have strong correlation</p>
+<p>3: Superplastic has somewhat smaller but a postive correlation with strength</p>
 <h2 id="discussion">3. Discussion</h2>
 <h2 id="model-training-and-evaluation">3.1 Model Training and Evaluation</h2>
 <h3 id="linear-regression">3.1.1 Linear Regression</h3>
@@ -451,6 +458,7 @@ Department of Something, University of Whatever; Department of Whatever, Univers
 <img src="https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png?raw=true" alt="" /><figcaption><strong>Figure: Kaggle Competition Page</strong></figcaption>
 </figure>
 <h2 id="conclusion">4. Conclusion</h2>
+<p>From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -660,7 +668,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:a1831949-16ea-430b-ae41-2f691c8d3e1a" class="tablenos">
+<div id="tbl:763cfa00-7475-4af2-89fb-70756402da5a" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>

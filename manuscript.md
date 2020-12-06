@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/054b04ab5fc70aa49bd55eb19ef579be4a33e998/))
+([permalink](https://qinyuz2.github.io/project3/v/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b/))
 was automatically generated
-from [qinyuz2/project3@054b04a](https://github.com/qinyuz2/project3/tree/054b04ab5fc70aa49bd55eb19ef579be4a33e998)
+from [qinyuz2/project3@2b24aea](https://github.com/qinyuz2/project3/tree/2b24aea02cb760bd9c9569b7a87a6b20f1b2ff3b)
 on December 6, 2020.
 </em></small>
 
@@ -135,7 +135,7 @@ The second most consumed substance in the world after water is concrete. Current
 
 ## 2. Method
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
 It is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data. 
 
@@ -195,6 +195,15 @@ The observations and comments that can be made from the pair plots is as follows
 
 5: Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren't the best predctors of strength.
 
+![EDA-14](https://user-images.githubusercontent.com/70567674/101286307-52a0b380-37af-11eb-955a-81c8de20c544.png)
+
+The observations and comments that can be made from the heat map is as follows:
+
+1: Cement and age have strong correlation with strength
+
+2: Water and superplastic have strong correlation
+
+3: Superplastic has somewhat smaller but a postive correlation with strength
 
 
 ## 3. Discussion
@@ -467,6 +476,8 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 
 
 ## 4. Conclusion
+
+From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.  
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
