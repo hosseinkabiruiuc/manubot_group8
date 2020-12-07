@@ -9,7 +9,7 @@ Champaign
 coarseagg
 compressive
 csv
-dataset
+Dataset
 datasets
 degreee
 deisgn
@@ -30,7 +30,7 @@ libraires
 Maier
 Marquardt
 Matlab
-modelling
+Modelling
 MPa
 MSE
 multivariable
@@ -58,7 +58,7 @@ Sonali
 SPSS
 Srivastava
 superplastic
-Superplasticizer
+superplasticizer
 UCI
 Urbana
 wether
