@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/))
+([permalink](https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/))
 was automatically generated
-from [qinyuz2/project3@75f4f48](https://github.com/qinyuz2/project3/tree/75f4f480430c92fffeaa5e3f3df7166930c6e976)
+from [qinyuz2/project3@27f4c63](https://github.com/qinyuz2/project3/tree/27f4c63be808202cd92be32c24aa3330d194aee0)
 on December 7, 2020.
 </em></small>
 
@@ -246,7 +246,8 @@ The observations and comments that can be made from the heat map is as follows:
 There are a total of eight independent variables used in the prediction which are cement, blast furnance slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate and age. The dependent variable is the concrete compressive strength, seen in the Table below.
 
 **Table: Independent Variable and Dependent Variable**
-
+|||
+|:-----|:----------|
 |**Independent Variables**|Cement|
 ||Blast furnance slag|
 ||Fly ash|
