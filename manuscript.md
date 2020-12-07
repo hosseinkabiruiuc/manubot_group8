@@ -64,11 +64,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/6c0f1f299f7b38a87c9b98d69f6204b6cbec8782/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/872903947301da1e4ae9568c5be16f05169f2dea/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/6c0f1f299f7b38a87c9b98d69f6204b6cbec8782/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/872903947301da1e4ae9568c5be16f05169f2dea/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/6c0f1f299f7b38a87c9b98d69f6204b6cbec8782/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/872903947301da1e4ae9568c5be16f05169f2dea/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -100,9 +100,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/6c0f1f299f7b38a87c9b98d69f6204b6cbec8782/))
+([permalink](https://qinyuz2.github.io/project3/v/872903947301da1e4ae9568c5be16f05169f2dea/))
 was automatically generated
-from [qinyuz2/project3@6c0f1f2](https://github.com/qinyuz2/project3/tree/6c0f1f299f7b38a87c9b98d69f6204b6cbec8782)
+from [qinyuz2/project3@8729039](https://github.com/qinyuz2/project3/tree/872903947301da1e4ae9568c5be16f05169f2dea)
 on December 7, 2020.
 </em></small>
 
@@ -258,18 +258,19 @@ The observations and comments that can be made from the heat map is as follows:
 There are a total of eight independent variables used in the prediction which are cement, blast furnance slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate and age. The dependent variable is the concrete compressive strength, seen in the Table below.
 
 **Table: Independent Variable and Dependent Variable**
-|||
+|      |           |
 |:-----|:----------|
 |**Independent Variables**|Cement|
-||Blast furnance slag|
-||Fly ash|
-||Water|
-||Superplasticizer|
-||Coarse aggregate|
-||Fine aggregate|
-||Age|
+|                         |Blast furnance slag|
+|                         |Fly ash|
+|                         |Water|
+|                         |Superplasticizer|
+|                         |Coarse aggregate|
+|                         |Fine aggregate|
+|                         |Age|
 |**Dependent Variable**|Concrete compressive strength|
 
+![**Table: Independent Variable and Dependent Variable**](https://github.com/qinyuz2/project3/blob/master/content/images/Table.png?raw=true)
 
 ## 2.3 Method Selected
 
