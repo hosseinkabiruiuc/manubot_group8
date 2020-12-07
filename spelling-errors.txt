@@ -9,7 +9,7 @@ Champaign
 coarseagg
 compressive
 csv
-dataset
+Dataset
 datatset
 degreee
 Dsitribution
@@ -18,6 +18,7 @@ EDA
 Ef
 El
 fineagg
+furnance
 HPC
 Hyperparameter
 improtant
@@ -27,7 +28,7 @@ libraires
 Maier
 Marquardt
 Matlab
-Modelling
+modelling
 MPa
 MSE
 multivariable
@@ -52,8 +53,8 @@ skewness
 Sonali
 SPSS
 Srivastava
-Superplastic
-superplasticizer
+superplastic
+Superplasticizer
 UCI
 Urbana
 wether
