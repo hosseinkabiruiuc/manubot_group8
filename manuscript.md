@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/c40c98786130351a7ed58f49e8bc1e35109e5ff8/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/c40c98786130351a7ed58f49e8bc1e35109e5ff8/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/c40c98786130351a7ed58f49e8bc1e35109e5ff8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/c40c98786130351a7ed58f49e8bc1e35109e5ff8/))
+([permalink](https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/))
 was automatically generated
-from [qinyuz2/project3@c40c987](https://github.com/qinyuz2/project3/tree/c40c98786130351a7ed58f49e8bc1e35109e5ff8)
+from [qinyuz2/project3@d3aac25](https://github.com/qinyuz2/project3/tree/d3aac257192b6b615e7538d9c68a86f9010fda9e)
 on December 7, 2020.
 </em></small>
 
@@ -826,3 +826,7 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
+[@Yeh1998]:doi: 10.1016/S0008-8846(98)00165-3
+[@Atici2011]: doi: 10.1016/j.eswa.2011.01.156
+[@Maier1998]: doi: 10.1016/S1364-8152(98)00020-6
+[@Alshihri2009]: doi: 10.1016/j.conbuildmat.2008.12.003
