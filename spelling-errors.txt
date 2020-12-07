@@ -30,7 +30,7 @@ libraires
 Maier
 Marquardt
 Matlab
-modelling
+Modelling
 MPa
 MSE
 multivariable
@@ -57,7 +57,7 @@ skewness
 Sonali
 SPSS
 Srivastava
-superplastic
+Superplastic
 superplasticizer
 UCI
 Urbana
