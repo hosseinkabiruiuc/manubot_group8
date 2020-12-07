@@ -109,9 +109,9 @@
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/c949472ce516e77718a9063adfaf6714f8dc7cc0/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/c949472ce516e77718a9063adfaf6714f8dc7cc0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/c949472ce516e77718a9063adfaf6714f8dc7cc0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/33ff0b1de898827afa23ad4c92259bb306e111fe/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/33ff0b1de898827afa23ad4c92259bb306e111fe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/33ff0b1de898827afa23ad4c92259bb306e111fe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -125,9 +125,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/c949472ce516e77718a9063adfaf6714f8dc7cc0/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/33ff0b1de898827afa23ad4c92259bb306e111fe/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/c949472ce516e77718a9063adfaf6714f8dc7cc0">qinyuz2/project3@c949472</a>
+from <a href="https://github.com/qinyuz2/project3/tree/33ff0b1de898827afa23ad4c92259bb306e111fe">qinyuz2/project3@33ff0b1</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -203,64 +203,93 @@ The problem statement that the paper deals with is the issue of predicting the b
 <p>Another article on prediction of the strength of concrete with different types of mineral admixtures was reviewed [4]. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete.</p>
 <p>Compared to the linear regression method, ANN had advantages of constructing the relationships among input and output parameters automatically, especially for calculating nonlinear functional relationships. The article verifies the effectiveness of Artificial Neural Networks in predicting concrete strength and is helpful for our own project. However, one weakness is that the training database used in the article is not big enough. If an Artificial Neural Network model with wide applicability was wanted, a larger database is needed.</p>
 <h2 id="method">2. Method</h2>
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<h2 id="exploratory-data-analysis">2.1 Exploratory Data Analysis</h2>
 <p>It is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data.</p>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285201-8bd62500-37a9-11eb-830e-7e12e48d8f6a.png" alt="" /><figcaption>EDA-1</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285201-8bd62500-37a9-11eb-830e-7e12e48d8f6a.png" alt="" /><figcaption><strong>EDA-1</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285383-7f060100-37aa-11eb-9f25-89ff8deffd1c.png" alt="" /><figcaption>EDA-2</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285383-7f060100-37aa-11eb-9f25-89ff8deffd1c.png" alt="" /><figcaption><strong>EDA-2</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285458-defca780-37aa-11eb-8f60-8773a5024f82.png" alt="" /><figcaption>EDA-3</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285458-defca780-37aa-11eb-8f60-8773a5024f82.png" alt="" /><figcaption><strong>EDA-3</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285512-3438b900-37ab-11eb-9cfa-367bdb3f6a17.png" alt="" /><figcaption>EDA-4</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285512-3438b900-37ab-11eb-9cfa-367bdb3f6a17.png" alt="" /><figcaption><strong>EDA-4</strong></figcaption>
 </figure>
+<h3 id="box-plot">Box Plot</h3>
 <p>Box plot analysis was performed:</p>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285748-7f070080-37ac-11eb-8808-78d668158a8a.png" alt="" /><figcaption>EDA-6</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285748-7f070080-37ac-11eb-8808-78d668158a8a.png" alt="" /><figcaption><strong>EDA-6</strong></figcaption>
 </figure>
 <p>The observations and comments that can be made from the above box plot is as follows:</p>
-<p>1:The data in cement, slag, ash doesn’t appear to have any significant outliers.</p>
-<p>2: The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.</p>
+<p>-The data in cement, slag, ash doesn’t appear to have any significant outliers.</p>
+<p>-The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.</p>
+<h3 id="distribution">Distribution</h3>
 <p>Dsitribution of the variables in the dataset have been plotted to gain better understanding.</p>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285838-00f72980-37ad-11eb-8b71-cbc0c7192b52.png" alt="" /><figcaption>EDA-8</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285838-00f72980-37ad-11eb-8b71-cbc0c7192b52.png" alt="" /><figcaption><strong>EDA-8</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285875-4ae00f80-37ad-11eb-9b39-14df99a7f17a.png" alt="" /><figcaption>EDA-9</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285875-4ae00f80-37ad-11eb-9b39-14df99a7f17a.png" alt="" /><figcaption><strong>EDA-9</strong></figcaption>
 </figure>
 <p>Distribution plot for strength variable</p>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101285965-aa3e1f80-37ad-11eb-913b-630c445d0253.png" alt="" /><figcaption>EDA-10</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101285965-aa3e1f80-37ad-11eb-913b-630c445d0253.png" alt="" /><figcaption><strong>EDA-10</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101286026-f12c1500-37ad-11eb-9c9c-b8a90ac10e12.png" alt="" /><figcaption>EDA-11</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101286026-f12c1500-37ad-11eb-9c9c-b8a90ac10e12.png" alt="" /><figcaption><strong>EDA-11</strong></figcaption>
 </figure>
 <p>The observations and comments that can be made from the distribution plots and skewness degreee data is as follows:</p>
-<p>1: The strength data is normally distributed.</p>
-<p>2: Water and cement data seems to be very near to being normally distributed.</p>
-<p>3: The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.</p>
+<p>-The strength data is normally distributed.</p>
+<p>-Water and cement data seems to be very near to being normally distributed.</p>
+<p>-The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.</p>
+<h3 id="pair-plot">Pair Plot</h3>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101286086-3cdebe80-37ae-11eb-9f4c-0a12fcd5dade.png" alt="" /><figcaption>EDA-12</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101286086-3cdebe80-37ae-11eb-9f4c-0a12fcd5dade.png" alt="" /><figcaption><strong>EDA-12</strong></figcaption>
 </figure>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101286114-60096e00-37ae-11eb-8b35-01ecd5916160.png" alt="" /><figcaption>EDA-13</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101286114-60096e00-37ae-11eb-8b35-01ecd5916160.png" alt="" /><figcaption><strong>EDA-13</strong></figcaption>
 </figure>
 <p>The observations and comments that can be made from the pair plots is as follows:</p>
-<p>1: There is strong positive correlation between cement and strength which seems theoretically consistent.</p>
-<p>2: In addition age also has a strong positive correlation to strength.</p>
-<p>3: Water and strength have a negative correlation which aagain seems theoretically consistent.</p>
-<p>4: Water and superplastic have a negeative correlation.</p>
-<p>5: Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren’t the best predctors of strength.</p>
+<p>-There is strong positive correlation between cement and strength which seems theoretically consistent.</p>
+<p>-In addition age also has a strong positive correlation to strength.</p>
+<p>-Water and strength have a negative correlation which aagain seems theoretically consistent.</p>
+<p>-Water and superplastic have a negeative correlation.</p>
+<p>-Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren’t the best predctors of strength.</p>
+<h3 id="heat-map">Heat Map</h3>
 <figure>
-<img src="https://user-images.githubusercontent.com/70567674/101286307-52a0b380-37af-11eb-955a-81c8de20c544.png" alt="" /><figcaption>EDA-14</figcaption>
+<img src="https://user-images.githubusercontent.com/70567674/101286307-52a0b380-37af-11eb-955a-81c8de20c544.png" alt="" /><figcaption><strong>EDA-14</strong></figcaption>
 </figure>
 <p>The observations and comments that can be made from the heat map is as follows:</p>
-<p>1: Cement and age have strong correlation with strength</p>
-<p>2: Water and superplastic have strong correlation</p>
-<p>3: Superplastic has somewhat smaller but a postive correlation with strength</p>
+<p>-Cement and age have strong correlation with strength</p>
+<p>-Water and superplastic have strong correlation</p>
+<p>-Superplastic has somewhat smaller but a postive correlation with strength</p>
+<h2 id="independent-variable-and-dependent-variable">2.2 Independent Variable and Dependent Variable</h2>
+<p>There are a total of eight independent variables used in the prediction which are cement, blast furnance slag, fly ash, water, superplasticizer, coarse aggregate, fine aggregate and age. The dependent variable is the concrete compressive strength, seen in the Table below.</p>
+<p><strong>Table: Independent Variable and Dependent Variable</strong></p>
+<p>|<strong>Independent Variables</strong>|Cement|
+||Blast furnance slag|
+||Fly ash|
+||Water|
+||Superplasticizer|
+||Coarse aggregate|
+||Fine aggregate|
+||Age|
+|<strong>Dependent Variable</strong>|Concrete compressive strength|</p>
+<h2 id="method-selected">2.3 Method Selected</h2>
+<p>According to exploratory data analysis, what we’re working with is tabular data and there’s no missing value. Also, all the data is numerical. We use seven different methods.</p>
+<p>-Linear Regression
+-Lasso Method
+-K-nearest Neighbor
+-Support Vector Machine
+-Neural Network
+-Decision Tree Regressor
+-Random Forest Regression</p>
+<p>Since we don’t have the actual concrete strength data in the given test dataset, we are going to split 20% of the train dataset to test models in order to evaluate the model performance. Based on the evaluation, we choose the best method. And then create a model using the whole train dataset to predict the test dataset and submit the result to the Kaggle Competition.</p>
+<figure>
+<img src="https://github.com/qinyuz2/project3/blob/master/content/images/Picture1.png?raw=true" alt="" /><figcaption><strong>Figure: Split the Train Dataset</strong></figcaption>
+</figure>
 <h2 id="discussion">3. Discussion</h2>
 <h2 id="model-training-and-evaluation">3.1 Model Training and Evaluation</h2>
 <h3 id="linear-regression">3.1.1 Linear Regression</h3>
