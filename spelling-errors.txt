@@ -9,8 +9,8 @@ Champaign
 coarseagg
 compressive
 csv
-Dataset
-datatset
+dataset
+datasets
 degreee
 Dsitribution
 Durbin
@@ -53,8 +53,8 @@ skewness
 Sonali
 SPSS
 Srivastava
-superplastic
-Superplasticizer
+Superplastic
+superplasticizer
 UCI
 Urbana
 wether

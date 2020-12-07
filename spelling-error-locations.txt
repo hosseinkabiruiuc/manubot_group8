@@ -113,8 +113,11 @@ content/03.Discussion.md:267:Kaggle
 content/03.Discussion.md:267:Kaggle
 content/04.Conclusion.md:3:dataset
 content/04.Conclusion.md:4:dataset
-content/04.Conclusion.md:4:datatset
-content/04.Conclusion.md:4:RMSE
+content/04.Conclusion.md:4:dataset
+content/04.Conclusion.md:4:Kaggle
+content/04.Conclusion.md:5:dataset
+content/04.Conclusion.md:5:datasets
+content/04.Conclusion.md:5:datasets
 content/90.back-matter.md:5:Alshihri
 content/90.back-matter.md:5:Azmy
 content/90.back-matter.md:5:Bisy
