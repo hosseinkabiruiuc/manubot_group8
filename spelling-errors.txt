@@ -9,7 +9,7 @@ Champaign
 coarseagg
 compressive
 csv
-Dataset
+dataset
 datasets
 degreee
 deisgn
