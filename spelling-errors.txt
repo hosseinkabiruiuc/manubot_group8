@@ -57,7 +57,7 @@ magna
 Maier
 Marquardt
 Matlab
-Modelling
+modelling
 mollit
 MPa
 MSE
@@ -97,7 +97,7 @@ Sonali
 SPSS
 Srivastava
 sunt
-Superplastic
+superplastic
 superplasticizer
 tempor
 UCI
