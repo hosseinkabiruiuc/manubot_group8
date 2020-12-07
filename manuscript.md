@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/498e0350446bf97b9459ac87164895207f1ec831/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/498e0350446bf97b9459ac87164895207f1ec831/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/498e0350446bf97b9459ac87164895207f1ec831/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/d3aac257192b6b615e7538d9c68a86f9010fda9e/))
+([permalink](https://qinyuz2.github.io/project3/v/498e0350446bf97b9459ac87164895207f1ec831/))
 was automatically generated
-from [qinyuz2/project3@d3aac25](https://github.com/qinyuz2/project3/tree/d3aac257192b6b615e7538d9c68a86f9010fda9e)
+from [qinyuz2/project3@498e035](https://github.com/qinyuz2/project3/tree/498e0350446bf97b9459ac87164895207f1ec831)
 on December 7, 2020.
 </em></small>
 
@@ -826,7 +826,7 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
-[@Yeh1998]:doi: 10.1016/S0008-8846(98)00165-3
-[@Atici2011]: doi: 10.1016/j.eswa.2011.01.156
-[@Maier1998]: doi: 10.1016/S1364-8152(98)00020-6
-[@Alshihri2009]: doi: 10.1016/j.conbuildmat.2008.12.003
+[1] Alshihri, M. M., Azmy, A. M., & El-Bisy, M. S. (2009). Neural networks for predicting compressive strength of  structural light weight concrete. Construction and Building Materials, 23(6), 2214-2219. [https://doi.org/10.1016/j.conbuildmat.2008.12.003] (https://doi.org/10.1016/j.conbuildmat.2008.12.003)
+[2] Maier, H. R., & Dandy, G. C. (1998). The effect of internal parameters and geometry on the performance of back-propagation neural networks: an empirical study. Environmental Modelling & Software, 13(2), 193-209. [https://doi.org/10.1016/S1364-8152(98)00020-6] (https://doi.org/10.1016/S1364-8152(98)00020-6)
+[3] Yeh, I. C. (1998). Modeling of strength of high-performance concrete using artificial neural networks. Cement and Concrete research, 28(12), 1797-1808. [https://doi.org/10.1016/S0008-8846(98)00165-3] (https://doi.org/10.1016/S0008-8846(98)00165-3)
+[4] Atici, U. (2011). Prediction of the strength of mineral admixture concrete using multivariable regression analysis and an artificial neural network. Expert Systems with applications, 38(8), 9609-9618. [https://doi.org/10.1016/j.eswa.2011.01.156] (https://doi.org/10.1016/j.eswa.2011.01.156)
