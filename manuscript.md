@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/))
+([permalink](https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/))
 was automatically generated
-from [qinyuz2/project3@8e8234c](https://github.com/qinyuz2/project3/tree/8e8234cc869364fb2bdd34d5c97f0cdc1042a680)
+from [qinyuz2/project3@09b94cc](https://github.com/qinyuz2/project3/tree/09b94cc4805e87c9002a5bcad8aa8eebf00de078)
 on December 7, 2020.
 </em></small>
 
@@ -211,7 +211,7 @@ The observations and comments that can be made from the distribution plots and s
 
 - Water and cement data seems to be very near to being normally distributed.
 
--The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.
+- The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.
 
 ### Pair Plot
 ![**EDA-12**](https://user-images.githubusercontent.com/70567674/101286086-3cdebe80-37ae-11eb-9f4c-0a12fcd5dade.png)
