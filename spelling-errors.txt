@@ -46,7 +46,6 @@ improtant
 incididunt
 ipsum
 irure
-janeroe
 Kaggle
 labore
 laboris
@@ -58,7 +57,7 @@ magna
 Maier
 Marquardt
 Matlab
-modelling
+Modelling
 mollit
 MPa
 MSE
@@ -94,9 +93,11 @@ sed
 sigmoid
 sint
 skewness
+Sonali
 SPSS
+Srivastava
 sunt
-superplastic
+Superplastic
 superplasticizer
 tempor
 UCI
@@ -106,6 +107,5 @@ velit
 veniam
 voluptate
 wether
-XXXX
 Yeh
 Zhang

@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Qinyu Zhang
-- Jane Roe
+- Sonali Srivastava
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-07'
@@ -43,13 +43,9 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Sonali Srivastava" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
 
   <link rel="canonical" href="https://qinyuz2.github.io/project3/" />
 
@@ -63,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,9 +95,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/))
+([permalink](https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/))
 was automatically generated
-from [qinyuz2/project3@a08f1e8](https://github.com/qinyuz2/project3/tree/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd)
+from [qinyuz2/project3@31df9e4](https://github.com/qinyuz2/project3/tree/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3)
 on December 7, 2020.
 </em></small>
 
@@ -116,13 +112,11 @@ on December 7, 2020.
      Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Sonali Srivastava**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [Sonali1610](https://github.com/Sonali1610)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
 
@@ -518,12 +512,6 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
 Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials. 
 
-## References
-
-[@Yeh1998]:doi: 10.1016/S0008-8846(98)00165-3
-[@Atici2011]: doi: 10.1016/j.eswa.2011.01.156
-[@Maier1998]: doi: 10.1016/S1364-8152(98)00020-6
-[@Alshihri2009]: doi: 10.1016/j.conbuildmat.2008.12.003
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
