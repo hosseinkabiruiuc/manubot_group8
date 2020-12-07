@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Qinyu Zhang" />
-  <meta name="author" content="Sonali Srivastava" />
+  <meta name="author" content="Jane Roe" />
   <meta name="dcterms.date" content="2020-12-07" />
   <meta name="keywords" content="Machine Learning, Concrete Strength, Civil Engineering" />
   <title>Project 3: Concrete Strength Prediction</title>
@@ -101,23 +101,32 @@
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Qinyu Zhang" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author" content="Sonali Srivastava" />
-  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://qinyuz2.github.io/project3/" />
   <meta property="og:url" content="https://qinyuz2.github.io/project3/" />
   <meta property="twitter:url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
+  
+  <!-- pandoc-eqnos: equation style -->
+  <style>
+    .eqnos { display: inline-block; position: relative; width: 100%; }
+    .eqnos br { display: none; }
+    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
+  </style>
 </head>
 <body>
 <header id="title-block-header">
@@ -125,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/293087ddccc5503e531671ad242977f830376eb7">qinyuz2/project3@293087d</a>
+from <a href="https://github.com/qinyuz2/project3/tree/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c">qinyuz2/project3@9a6d547</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -138,11 +147,13 @@ on December 7, 2020.
 <small>
 Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign
 </small></p></li>
-<li><p><strong>Sonali Srivastava</strong><br>
+<li><p><strong>Jane Roe</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/Sonali1610">Sonali1610</a><br>
+<a href="https://github.com/janeroe">janeroe</a><br>
 <small>
-Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign
+Department of Something, University of Whatever; Department of Whatever, University of Something
 </small></p></li>
 </ul>
 <h2 id="introduction">1. Introduction</h2>
@@ -155,7 +166,7 @@ Department of Civil &amp; Environmental Engineering, University of Illinois at U
 <p>Machine learning (ML) algorithm finds patterns in massive amount of dataset and predicts the output. It provides a system which has ability to learn automatically and improve the performance from experiences. It builds a model based on training dataset and predict the output variable for test dataset. Traditionally, ML is divided into three categories: supervised, unsupervised and reinforcement learning. With the given dataset, we used supervised learning technique because output of trained dataset was provided, and the overall goal was to learn and map inputs to the output.</p>
 <p>Models are required for performing machine learning and there are various of models that can have been researched for learning systems. Artificial neural network is one of them. It is based on the behavior of neurons. It consists of a set of interconnected neurons arranged in layers. Typically, there are three types of layers: input layer, hidden layer, and output layer. Each neuron in input layer corresponds to the input variables. The outputs are obtained through neurons in output layer. Hidden layers take the weighted inputs, perform the regression, and produce outputs. Other methods like Linear Regression and Lasso assume linear relationship between input and output variables. To avoid the overfit, regularization is performed. Lasso regularization is one of them which modifies the ordinary least square error by penalizing the regression method. Decision tree method uses tree-like model to deliver the final output. Random decision forest is ensemble learning technique which uses Bootstrap Aggregation. The main idea is to combine multiple decision tree to find the final output.</p>
 <h3 id="literature-review">1.3 Literature Review</h3>
-<p>Being a highly non-linear materials, modelling concrete’s behavior in terms of its strength and durability is a difficult task. Free models – Mathematical models based on experimental data – are generally recommended and have been used widely. Neural network (NN) models for predicting compressive strength of light weight concrete mixtures for 3, 7, 14 and 28 days of curing was used in this article [1]. The data were collected by performing compressive strength test for different concrete mix. Cement, silica fumes, light weight coarse aggregate, light weight fine aggregate and water were used in different proportions to cast concrete cubes (150 mm x 150 mm x 150 mm). Two training processes – back propagation (BP) and cascade correlation (CC) were used. While training the models, minimum mean square error (MSE) corresponds to the most stable system. Back propagation algorithm fine tunes the weights of input neural network based on MSE obtained from previous iteration. However, cascade correlation does not just adjust weights of fixed number of hidden layers. It starts with one hidden layer to train automatically and add new layers one by one by keeping the weights frozen from pervious training. Preprocessing of data set were performed and, 70% and 30% were randomly chosen for training and validation, respectively. The assessments were performed using for indices – Mean absolute error (MAE), root mean square error (RMSE), correlation coefficient R, and coefficient of efficiency Ef. Eight inputs provided in input layers were: sand, water to cement ratio, light weight fine aggregate, light weight coarse aggregate, silica fumes, superplasticizer and curing period and, four outputs were the compressive strength of concrete mix after 3, 7, 14 and 28 days. The parametric study was performed by changing the different number of hidden layers for BP training process. The most stable network was found when there were 14 neurons in one hidden layer. Furthermore, additional hidden layer was added to improve the performance. 14 layers in one hidden layer (based on previous training) and another layer with 6 neurons gave the optimum results. This is similar to the results found by Maier and Dandy [2] that first and second hidden layers should not exceed 3:1 ratio for maximum accuracy. Values of assessment indices are summarized in the following table:</p>
+<p>Being a highly non-linear materials, modelling concrete’s behavior in terms of its strength and durability is a difficult task. Free models – Mathematical models based on experimental data – are generally recommended and have been used widely. <span class="citation" data-cites="Alshihri2009">[<span class="citeproc-not-found" data-reference-id="Alshihri2009"><strong>???</strong></span>]</span> used neural network (NN) models for predicting compressive strength of light weight concrete mixtures for 3, 7, 14 and 28 days of curing. The data were collected by performing compressive strength test for different concrete mix. Cement, silica fumes, light weight coarse aggregate, light weight fine aggregate and water were used in different proportions to cast concrete cubes (150 mm x 150 mm x 150 mm). Two training processes – back propagation (BP) and cascade correlation (CC) were used. While training the models, minimum mean square error (MSE) corresponds to the most stable system. Back propagation algorithm fine tunes the weights of input neural network based on MSE obtained from previous iteration. However, cascade correlation does not just adjust weights of fixed number of hidden layers. It starts with one hidden layer to train automatically and add new layers one by one by keeping the weights frozen from pervious training. Preprocessing of data set were performed and, 70% and 30% were randomly chosen for training and validation, respectively. The assessments were performed using for indices – Mean absolute error (MAE), root mean square error (RMSE), correlation coefficient R, and coefficient of efficiency Ef. Eight inputs provided in input layers were: sand, water to cement ratio, light weight fine aggregate, light weight coarse aggregate, silica fumes, superplasticizer and curing period and, four outputs were the compressive strength of concrete mix after 3, 7, 14 and 28 days. The parametric study was performed by changing the different number of hidden layers for BP training process. The most stable network was found when there were 14 neurons in one hidden layer. Furthermore, additional hidden layer was added to improve the performance. 14 layers in one hidden layer (based on previous training) and another layer with 6 neurons gave the optimum results. This is similar to the results found by Maier and Dandy <span class="citation" data-cites="Maier1998">[<span class="citeproc-not-found" data-reference-id="Maier1998"><strong>???</strong></span>]</span> that first and second hidden layers should not exceed 3:1 ratio for maximum accuracy. Values of assessment indices are summarized in the following table:</p>
 <p><strong>Table: Mean absolute (MAE) and correlation coefficient R for BP (8-14-6-4) and CC model</strong></p>
 <table>
 <thead>
@@ -199,8 +210,8 @@ Department of Civil &amp; Environmental Engineering, University of Illinois at U
 </tbody>
 </table>
 <p>This shows that both NN models provided similar results. But it was observed that CC was better than BP (8-14-6-4) model as it learns quickly and determine the size and topology on its own. These analyses have huge potential in predicting the properties of concrete and avoid expensive and time-consuming tests.
-The problem statement that the paper deals with is the issue of predicting the behavior of High-Performance Concrete (HPC) [3] The paper argues that the problem of difficulty in the prediction of HPC behaviors can be solved by the use of Artificial Neural Networks (ANN). The research describes ANN’s a collective of parallel architecture that can be used to solve critical problems by cooperation and interconnection with simple computing elements called neurons. The target behind creating the ANN in the research was to have a model which can efficiently predict the strength of different HPC mixes. The main principle on which neural networks work as back-propagation and gradient descent. The data set used to train the model consisted to experiments involving strength experiments and predictions. The concept was to train the model on the set of experiments which describe material behavior and then create a successful neural network which can then serve as a model to predict strength of HPC mixes in general. There are eight different parameters which the research takes to initialize the network they are: quantities of cement, fly-ash, blast-furnace slag, water, super-plasticizer, and fine aggregate. The model was trained from a dataset complied from 17 different sources and in total 727 records of strength experimentation data was used to train the model. The division of the data was done into four sets A, B, C and D out of which sets of 3 were used to train the model and 1 set was used to test the strength predictive ability of the model. The success of the model is highlighted from the fact that the correlation parameter between strength predictions and variables in a model was much closer to 1 than the standard regression model traditionally used to test the model.</p>
-<p>Another article on prediction of the strength of concrete with different types of mineral admixtures was reviewed [4]. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete.</p>
+<span class="citation" data-cites="Yeh1998">[<span class="citeproc-not-found" data-reference-id="Yeh1998"><strong>???</strong></span>]</span> predicted the behaviour of High-Performance Concrete (HPC) using ANN. The paper argues that the problem of difficulty in the prediction of HPC behaviors can be solved by the use of Artificial Neural Networks (ANN). The research describes ANN’s a collective of parallel architecture that can be used to solve critical problems by cooperation and interconnection with simple computing elements called neurons. The target behind creating the ANN in the research was to have a model which can efficiently predict the strength of different HPC mixes. The main principle on which neural networks work as back-propagation and gradient descent. The data set used to train the model consisted to experiments involving strength experiments and predictions. The concept was to train the model on the set of experiments which describe material behavior and then create a successful neural network which can then serve as a model to predict strength of HPC mixes in general. There are eight different parameters which the research takes to initialize the network they are: quantities of cement, fly-ash, blast-furnace slag, water, super-plasticizer, and fine aggregate. The model was trained from a dataset complied from 17 different sources and in total 727 records of strength experimentation data was used to train the model. The division of the data was done into four sets A, B, C and D out of which sets of 3 were used to train the model and 1 set was used to test the strength predictive ability of the model. The success of the model is highlighted from the fact that the correlation parameter between strength predictions and variables in a model was much closer to 1 than the standard regression model traditionally used to test the model.</p>
+<p><span class="citation" data-cites="Atici2011">[<span class="citeproc-not-found" data-reference-id="Atici2011"><strong>???</strong></span>]</span> predicted the strength of concrete with different types of mineral admixtures. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete.</p>
 <p>Compared to the linear regression method, ANN had advantages of constructing the relationships among input and output parameters automatically, especially for calculating nonlinear functional relationships. The article verifies the effectiveness of Artificial Neural Networks in predicting concrete strength and is helpful for our own project. However, one weakness is that the training database used in the article is not big enough. If an Artificial Neural Network model with wide applicability was wanted, a larger database is needed.</p>
 <h2 id="method">2. Method</h2>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
@@ -504,10 +515,350 @@ The problem statement that the paper deals with is the issue of predicting the b
 <h2 id="conclusion">4. Conclusion</h2>
 <p>From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
 Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials.</p>
-<h2 class="page_break_before" id="references">References</h2>
+<h2 id="references">References</h2>
+<p><span class="citation" data-cites="Yeh1998">[<span class="citeproc-not-found" data-reference-id="Yeh1998"><strong>???</strong></span>]</span>:doi: 10.1016/S0008-8846(98)00165-3
+<span class="citation" data-cites="Atici2011">[<span class="citeproc-not-found" data-reference-id="Atici2011"><strong>???</strong></span>]</span>: doi: 10.1016/j.eswa.2011.01.156
+<span class="citation" data-cites="Maier1998">[<span class="citeproc-not-found" data-reference-id="Maier1998"><strong>???</strong></span>]</span>: doi: 10.1016/S1364-8152(98)00020-6
+<span class="citation" data-cites="Alshihri2009">[<span class="citeproc-not-found" data-reference-id="Alshihri2009"><strong>???</strong></span>]</span>: doi: 10.1016/j.conbuildmat.2008.12.003</p>
+<p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
+Use this template as a starting point for your manuscript.</p>
+<p>The rest of this document is a full list of formatting elements/features supported by Manubot.
+Compare the input (<code>.md</code> files in the <code>/content</code> directory) to the output you see below.</p>
+<h2 id="basic-formatting">Basic formatting</h2>
+<p><strong>Bold</strong> <strong>text</strong></p>
+<p><span class="semibold">Semi-bold text</span></p>
+<p><span class="center">Centered text</span></p>
+<p><span class="right">Right-aligned text</span></p>
+<p><em>Italic</em> <em>text</em></p>
+<p>Combined <em>italics and <strong>bold</strong></em></p>
+<p><del>Strikethrough</del></p>
+<ol type="1">
+<li>Ordered list item</li>
+<li>Ordered list item
+<ol type="a">
+<li>Sub-item</li>
+<li>Sub-item
+<ol type="i">
+<li>Sub-sub-item</li>
+</ol></li>
+</ol></li>
+<li>Ordered list item
+<ol type="a">
+<li>Sub-item</li>
+</ol></li>
+</ol>
+<ul>
+<li>List item</li>
+<li>List item</li>
+<li>List item</li>
+</ul>
+<p>subscript: H<sub>2</sub>O is a liquid</p>
+<p>superscript: 2<sup>10</sup> is 1024.</p>
+<p><a href="https://www.google.com/search?q=superscript+generator">unicode superscripts</a>⁰¹²³⁴⁵⁶⁷⁸⁹</p>
+<p><a href="https://www.google.com/search?q=superscript+generator">unicode subscripts</a>₀₁₂₃₄₅₆₇₈₉</p>
+<p>A long paragraph of text.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Putting each sentence on its own line has numerous benefits with regard to <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line">editing</a> and <a href="https://rhodesmill.org/brandon/2012/one-sentence-per-line/">version control</a>.</p>
+<p>Line break without starting a new paragraph by putting<br />
+two spaces at end of line.</p>
+<h2 id="document-organization">Document organization</h2>
+<p>Document section headings:</p>
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+<h3 class="center page_center" id="a-heading-centered-on-its-own-printed-page">A heading centered on its own printed page</h3>
+<!-- an arbitrary comment. visible in input, but not visible in output. -->
+<p>Horizontal rule:</p>
+<hr />
+<p><code>Heading 1</code>’s are recommended to be reserved for the title of the manuscript.</p>
+<p><code>Heading 2</code>’s are recommended for broad sections such as <em>Abstract</em>, <em>Methods</em>, <em>Conclusion</em>, etc.</p>
+<p><code>Heading 3</code>’s and <code>Heading 4</code>’s are recommended for sub-sections.</p>
+<h2 id="links">Links</h2>
+<p>Bare URL link: <a href="https://manubot.org" class="uri">https://manubot.org</a></p>
+<p><a href="https://manubot.org">Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah</a></p>
+<p><a href="https://manubot.org">Link with text</a></p>
+<p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
+<p><a href="https://manubot.org">Link by reference</a></p>
+<h2 id="citations">Citations</h2>
+<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
+<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>]</span>.</p>
+<p>Citation by PubMed ID <span class="citation" data-cites="126Wi5Us4">[<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>]</span>.</p>
+<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">4</a>]</span>.</p>
+<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>]</span>.</p>
+<p>Citation by URL <span class="citation" data-cites="6acIRW4q">[<a href="#ref-6acIRW4q" role="doc-biblioref">6</a>]</span>.</p>
+<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.</p>
+<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">5</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>]</span>.
+Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">8</a>]</span>.</p>
+<p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
+<h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
+<p>Figure <a href="#fig:square-image">1</a></p>
+<p>Figure <a href="#fig:wide-image">2</a></p>
+<p>Figure <a href="#fig:tall-image">3</a></p>
+<p>Figure <a href="#fig:vector-image">4</a></p>
+<p>Table <a href="#tbl:bowling-scores">1</a></p>
+<p>Equation <a href="#eq:regular-equation">1</a></p>
+<p>Equation <a href="#eq:long-equation">2</a></p>
+<h2 id="quotes-and-code">Quotes and code</h2>
+<blockquote>
+<p>Quoted text</p>
+</blockquote>
+<blockquote>
+<p>Quoted block of text</p>
+<p>Two roads diverged in a wood, and I—<br />
+I took the one less traveled by,<br />
+And that has made all the difference.</p>
+</blockquote>
+<p>Code <code>in the middle</code> of normal text, aka <code>inline code</code>.</p>
+<p>Code block with Python syntax highlighting:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="im">from</span> manubot.cite.doi <span class="im">import</span> expand_short_doi</span>
+<span id="cb12-2"><a href="#cb12-2"></a></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="kw">def</span> test_expand_short_doi():</span>
+<span id="cb12-4"><a href="#cb12-4"></a>    doi <span class="op">=</span> expand_short_doi(<span class="st">&quot;10/c3bp&quot;</span>)</span>
+<span id="cb12-5"><a href="#cb12-5"></a>    <span class="co"># a string too long to fit within page:</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a>    <span class="cf">assert</span> doi <span class="op">==</span> <span class="st">&quot;10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah&quot;</span></span></code></pre></div>
+<p>Code block with no syntax highlighting:</p>
+<pre><code>Exporting HTML manuscript
+Exporting DOCX manuscript
+Exporting PDF manuscript</code></pre>
+<h2 id="figures">Figures</h2>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="" /><figcaption><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+Loaded from the latest version of image on GitHub.</figcaption>
+</figure>
+</div>
+<div id="fig:wide-image" class="fignos">
+<figure>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="" /><figcaption><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
+Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+</figure>
+</div>
+<div id="fig:tall-image" class="fignos">
+<figure>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="" /><figcaption><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
+Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+</figure>
+</div>
+<div id="fig:vector-image" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="" /><figcaption><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
+The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
+White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
+</figure>
+</div>
+<h2 id="tables">Tables</h2>
+<div id="tbl:bowling-scores" class="tablenos">
+<table>
+<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><em>Bowling Scores</em></th>
+<th style="text-align: center;">Jane</th>
+<th style="text-align: center;">John</th>
+<th style="text-align: center;">Alice</th>
+<th style="text-align: center;">Bob</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Game 1</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">187</td>
+<td style="text-align: center;">210</td>
+<td style="text-align: center;">105</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Game 2</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">202</td>
+<td style="text-align: center;">197</td>
+<td style="text-align: center;">102</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Game 3</td>
+<td style="text-align: center;">123</td>
+<td style="text-align: center;">180</td>
+<td style="text-align: center;">238</td>
+<td style="text-align: center;">134</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:constant-digits" class="tablenos">
+<table>
+<caption><span>Table 2:</span> A table too wide to fit within page.
+</caption>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Digits 1-33</th>
+<th style="text-align: left;">Digits 34-66</th>
+<th style="text-align: left;">Digits 67-99</th>
+<th style="text-align: left;">Ref.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">pi</td>
+<td style="text-align: left;">3.14159265358979323846264338327950</td>
+<td style="text-align: left;">288419716939937510582097494459230</td>
+<td style="text-align: left;">781640628620899862803482534211706</td>
+<td style="text-align: left;"><a href="https://www.piday.org/million/"><code>piday.org</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">e</td>
+<td style="text-align: left;">2.71828182845904523536028747135266</td>
+<td style="text-align: left;">249775724709369995957496696762772</td>
+<td style="text-align: left;">407663035354759457138217852516642</td>
+<td style="text-align: left;"><a href="https://apod.nasa.gov/htmltest/gifcity/e.2mil"><code>nasa.gov</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl:e888c858-e7ac-41e4-b97a-dba0e355334e" class="tablenos">
+<table>
+<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
+</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>Colors</strong> <!-- $colspan="2" --></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Size</strong></td>
+<td style="text-align: center;"><strong>Text Color</strong></td>
+<td style="text-align: center;"><strong>Background Color</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">big</td>
+<td style="text-align: center;">blue</td>
+<td style="text-align: center;">orange</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">small</td>
+<td style="text-align: center;">black</td>
+<td style="text-align: center;">white</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="equations">Equations</h2>
+<p>A LaTeX equation:</p>
+<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
+<p>An equation too long to fit within page:</p>
+<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
+<h2 id="special">Special</h2>
+<p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
+<em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>
+<p><a href="https://manubot.org" class="button" title="Manubot Homepage">Link styled as a button</a></p>
+<p>Adding arbitrary HTML attributes to an element using Pandoc’s attribute syntax:</p>
+<div id="some_id_1" class="some_class" style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true">
+<p>Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.</p>
+</div>
+<p>Adding arbitrary HTML attributes to an element with the Manubot <code>attributes</code> plugin (more flexible than Pandoc’s method in terms of which elements you can add attributes to):</p>
+<p>Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.
+<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" --></p>
+<p>Available background colors for text, images, code, banners, etc:</p>
+<p><code class="white">white</code>
+<code class="lightgrey">lightgrey</code>
+<code class="grey">grey</code>
+<code class="darkgrey">darkgrey</code>
+<code class="black">black</code>
+<code class="lightred">lightred</code>
+<code class="lightyellow">lightyellow</code>
+<code class="lightgreen">lightgreen</code>
+<code class="lightblue">lightblue</code>
+<code class="lightpurple">lightpurple</code>
+<code class="red">red</code>
+<code class="orange">orange</code>
+<code class="yellow">yellow</code>
+<code class="green">green</code>
+<code class="blue">blue</code>
+<code class="purple">purple</code></p>
+<p>Using the <a href="https://fontawesome.com/">Font Awesome</a> icon set:</p>
+<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
+<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
+<p><i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i></p>
+<p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Light Grey Banner</strong><br>
+useful for <em>general information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
+<p><span class="banner lightblue"><i class="fas fa-info-circle fa-lg"></i> <strong>Blue Banner</strong><br>
+useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
+<p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
+useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
+<h2 class="page_break_before" id="references-1">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-IhliSZDo">
+<p>1. <strong>Sci-Hub provides access to nearly all scholarly literature</strong> <br />
+Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene<br />
+<em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <br />
+DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></p>
+</div>
+<div id="ref-mSMVRkoc">
+<p>2. <strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <br />
+Brett K Beaulieu-Jones, Casey S Greene<br />
+<em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <br />
+DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></p>
+</div>
+<div id="ref-126Wi5Us4">
+<p>3. <strong>Bitcoin for the biological literature.</strong> <br />
+Douglas Heaven<br />
+<em>Nature</em> (2019-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">https://www.ncbi.nlm.nih.gov/pubmed/30718888</a> <br />
+DOI: <a href="https://doi.org/10.1038/d41586-019-00447-9">10.1038/d41586-019-00447-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">30718888</a></p>
+</div>
+<div id="ref-QhC8yJ7V">
+<p>4. <strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <br />
+cOAlition S<br />
+(2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></p>
+</div>
+<div id="ref-zBPP9YKu">
+<p>5. <strong>Open access</strong> <br />
+Peter Suber<br />
+<em>MIT Press</em> (2012) <br />
+ISBN: <a href="https://worldcat.org/isbn/9780262517638">9780262517638</a></p>
+</div>
+<div id="ref-6acIRW4q">
+<p>6. <strong>Open collaborative writing with Manubot</strong> <br />
+Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br />
+<em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></p>
+</div>
+<div id="ref-PZMP42Ak">
+<p>7. <strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <br />
+Travers Ching, Daniel S. Himmelstein, Brett K. Beaulieu-Jones, Alexandr A. Kalinin, Brian T. Do, Gregory P. Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M. Hoffman, … Casey S. Greene<br />
+<em>Journal of The Royal Society Interface</em> (2018-04-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <br />
+DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></p>
+</div>
+<div id="ref-YuJbg3zO">
+<p>8. <strong>Open collaborative writing with Manubot</strong> <br />
+Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br />
+<em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <br />
+DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></p>
+</div>
 </div>
 <p>[1] Alshihri, M. M., Azmy, A. M., &amp; El-Bisy, M. S. (2009). Neural networks for predicting compressive strength of structural light weight concrete. Construction and Building Materials, 23(6), 2214-2219. [https://doi.org/10.1016/j.conbuildmat.2008.12.003] (https://doi.org/10.1016/j.conbuildmat.2008.12.003)</p>
 <p>[2] Maier, H. R., &amp; Dandy, G. C. (1998). The effect of internal parameters and geometry on the performance of back-propagation neural networks: an empirical study. Environmental Modelling &amp; Software, 13(2), 193-209. [https://doi.org/10.1016/S1364-8152(98)00020-6] (https://doi.org/10.1016/S1364-8152(98)00020-6)</p>
