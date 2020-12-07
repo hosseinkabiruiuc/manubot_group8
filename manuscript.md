@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-06'
+date-meta: '2020-12-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Project 3: Concrete Strength Prediction" />
 
-  <meta name="dc.date" content="2020-12-06" />
+  <meta name="dc.date" content="2020-12-07" />
 
-  <meta name="citation_publication_date" content="2020-12-06" />
+  <meta name="citation_publication_date" content="2020-12-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -63,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/3b370ab7f775e0c080b99e762e487201778e7ba5/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/1414d502786ad568804fd1728d44f6335b51d7ab/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/3b370ab7f775e0c080b99e762e487201778e7ba5/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/1414d502786ad568804fd1728d44f6335b51d7ab/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/3b370ab7f775e0c080b99e762e487201778e7ba5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/1414d502786ad568804fd1728d44f6335b51d7ab/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -99,10 +99,10 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/3b370ab7f775e0c080b99e762e487201778e7ba5/))
+([permalink](https://qinyuz2.github.io/project3/v/1414d502786ad568804fd1728d44f6335b51d7ab/))
 was automatically generated
-from [qinyuz2/project3@3b370ab](https://github.com/qinyuz2/project3/tree/3b370ab7f775e0c080b99e762e487201778e7ba5)
-on December 6, 2020.
+from [qinyuz2/project3@1414d50](https://github.com/qinyuz2/project3/tree/1414d502786ad568804fd1728d44f6335b51d7ab)
+on December 7, 2020.
 </em></small>
 
 ## Authors
