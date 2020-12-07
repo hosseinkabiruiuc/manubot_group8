@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/qinyuz2/project3/tree/gh-pages) branch hosts the contents of this directory at <https://qinyuz2.github.io/project3/>.
-The permalink for this webpage version is <https://qinyuz2.github.io/project3/v/1414d502786ad568804fd1728d44f6335b51d7ab/>.
+The permalink for this webpage version is <https://qinyuz2.github.io/project3/v/151e7c40078031057497837bcbc5729b6d27271e/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://qinyuz2.github.io/project3/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`1414d502786ad568804fd1728d44f6335b51d7ab`](https://github.com/qinyuz2/project3/commit/1414d502786ad568804fd1728d44f6335b51d7ab).
+[`151e7c40078031057497837bcbc5729b6d27271e`](https://github.com/qinyuz2/project3/commit/151e7c40078031057497837bcbc5729b6d27271e).
