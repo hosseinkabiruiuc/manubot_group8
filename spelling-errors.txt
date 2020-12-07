@@ -91,7 +91,7 @@ sint
 skewness
 SPSS
 sunt
-superplastic
+Superplastic
 superplasticizer
 tempor
 UCI
