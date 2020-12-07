@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/23af57db28ef586ae3d17c10b8b6980ccb22d2aa/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/23af57db28ef586ae3d17c10b8b6980ccb22d2aa/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/23af57db28ef586ae3d17c10b8b6980ccb22d2aa/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/23af57db28ef586ae3d17c10b8b6980ccb22d2aa/))
+([permalink](https://qinyuz2.github.io/project3/v/75f4f480430c92fffeaa5e3f3df7166930c6e976/))
 was automatically generated
-from [qinyuz2/project3@23af57d](https://github.com/qinyuz2/project3/tree/23af57db28ef586ae3d17c10b8b6980ccb22d2aa)
+from [qinyuz2/project3@75f4f48](https://github.com/qinyuz2/project3/tree/75f4f480430c92fffeaa5e3f3df7166930c6e976)
 on December 7, 2020.
 </em></small>
 
@@ -546,8 +546,12 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 
 
 ## 4. Conclusion
-Being non-linear and uncertain material, performance of concrete varies a lot with different constituents and their ratio. Performing compressive strength test for large set by crushing the cylinders is time consuming and prone to human error. Now, ML and ANN are taking place in mix deisgn because of its high accuracy and speed. Different training methods have been opted. Each method has its own merits and limitations. It is very crucial to understand the dataset first and then optimize the method. From the Exploratory Data analysis, it is found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There is a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset is needed and the high amount of outliers in the age variable data was taken into account.
+Being non-linear and uncertain material, performance of concrete varies a lot with different constituents and their ratio. Performing compressive strength test for large set by crushing the cylinders is time consuming and prone to human error. Now, ML and ANN are taking place in mix deisgn because of its high accuracy and speed. Different training methods have been opted. Each method has its own merits and limitations. It is very crucial to understand the dataset first and then optimize the method. 
+
+From the Exploratory Data analysis, it is found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There is a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset is needed and the high amount of outliers in the age variable data was taken into account.
+
 A total of seven methods are used to predict the concrete strength, among which random forest model has a lowest root mean squared error and a highest accuracy. So, we create a random forest model trained by the whole train dataset and use it to predict the given test dataset. The score(root mean squared error) obtained from Kaggle Competition is about 5.5, which indicates the model accuracy is about 85%-90%. 
+
 In this study, random forest shows a great potential in predicting concrete strength, however, one limitation is that the dataset we used is not large enough. In the future study, we will use larger datasets, aiming to 1) improve model accuracy and, 2) confirm whether random forest can be applied to other datasets.
 
 
