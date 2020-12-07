@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Qinyu Zhang" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Sonali Srivastava" />
   <meta name="dcterms.date" content="2020-12-07" />
   <meta name="keywords" content="Machine Learning, Concrete Strength, Civil Engineering" />
   <title>Project 3: Concrete Strength Prediction</title>
@@ -101,19 +101,17 @@
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Qinyu Zhang" />
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Sonali Srivastava" />
+  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <link rel="canonical" href="https://qinyuz2.github.io/project3/" />
   <meta property="og:url" content="https://qinyuz2.github.io/project3/" />
   <meta property="twitter:url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +132,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/a08f1e8eb51c0a1f6733ac764c19c99e68456ffd">qinyuz2/project3@a08f1e8</a>
+from <a href="https://github.com/qinyuz2/project3/tree/31df9e4e9db0ac6674aa0b78531050d7db2e9dd3">qinyuz2/project3@31df9e4</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -147,13 +145,11 @@ on December 7, 2020.
 <small>
 Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign
 </small></p></li>
-<li><p><strong>Jane Roe</strong><br>
-<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<li><p><strong>Sonali Srivastava</strong><br>
 · <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a><br>
+<a href="https://github.com/Sonali1610">Sonali1610</a><br>
 <small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
+Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign
 </small></p></li>
 </ul>
 <h2 id="introduction">1. Introduction</h2>
@@ -515,11 +511,6 @@ The problem statement that the paper deals with is the issue of predicting the b
 <h2 id="conclusion">4. Conclusion</h2>
 <p>From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
 Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials.</p>
-<h2 id="references">References</h2>
-<p><span class="citation" data-cites="Yeh1998">[<span class="citeproc-not-found" data-reference-id="Yeh1998"><strong>???</strong></span>]</span>:doi: 10.1016/S0008-8846(98)00165-3
-<span class="citation" data-cites="Atici2011">[<span class="citeproc-not-found" data-reference-id="Atici2011"><strong>???</strong></span>]</span>: doi: 10.1016/j.eswa.2011.01.156
-<span class="citation" data-cites="Maier1998">[<span class="citeproc-not-found" data-reference-id="Maier1998"><strong>???</strong></span>]</span>: doi: 10.1016/S1364-8152(98)00020-6
-<span class="citation" data-cites="Alshihri2009">[<span class="citeproc-not-found" data-reference-id="Alshihri2009"><strong>???</strong></span>]</span>: doi: 10.1016/j.conbuildmat.2008.12.003</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -729,7 +720,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:6042b08c-eb42-43a2-81c9-cbfce14e1a97" class="tablenos">
+<div id="tbl:c7dc7109-63de-41b8-8f5c-955581922663" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -810,7 +801,7 @@ useful for <em>general information</em> - <a href="https://manubot.org/">manubot
 useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<h2 class="page_break_before" id="references-1">References</h2>
+<h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-IhliSZDo">
