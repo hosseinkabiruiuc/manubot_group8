@@ -111,9 +111,9 @@
   <meta name="citation_fulltext_html_url" content="https://qinyuz2.github.io/project3/" />
   <meta name="citation_pdf_url" content="https://qinyuz2.github.io/project3/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/53707aa93a792a4685125fa929da1c6a34765dd0/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/53707aa93a792a4685125fa929da1c6a34765dd0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/53707aa93a792a4685125fa929da1c6a34765dd0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/">permalink</a>)
+(<a href="https://qinyuz2.github.io/project3/v/53707aa93a792a4685125fa929da1c6a34765dd0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/qinyuz2/project3/tree/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c">qinyuz2/project3@9a6d547</a>
+from <a href="https://github.com/qinyuz2/project3/tree/53707aa93a792a4685125fa929da1c6a34765dd0">qinyuz2/project3@53707aa</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -156,63 +156,8 @@ Department of Civil &amp; Environmental Engineering, University of Illinois at U
 Department of Something, University of Whatever; Department of Whatever, University of Something
 </small></p></li>
 </ul>
-<h2 id="introduction">1. Introduction</h2>
-<p>The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production is highly energy intensive process. In 2015, it generated around 2.8 billion of CO^2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time. Also, small human error in designing or preparing can lead to drastic change in strength and increase the waiting time.</p>
-<p>Recently, researchers are developing models using machine learning and artificial neural network to predict the compressive strength of concrete. This is very useful in predicting the performance using complex non-linear relations.</p>
-<h3 id="problem-statement">1.1 Problem Statement</h3>
-<p>Since conventional methods for checking the performance of concrete are time consuming and prone to human error. This project aims to predict the compressive strength of concrete using different emerging soft computer techniques like Linear Regression, Lasso Regression, Artificial Neural Network, Random Forest, and Decision Tree Regression. A comparison is made using the root mean square error and model with better performance was chosen.</p>
-<p>The dataset was collected from UCI Machine Learning Repository. It has total 1030 instances with 9 attributes (8 quantitative input variable and 1 quantitative output variables). The eight independent variables are: cement (kg/m3), blast furnace slag (kg/m3), fly ash (kg/m3), water (kg/m3), superplasticizer (kg/m3), coarse aggregates (kg/m3), fine aggregates (kg/m3), and age of curing (days). The dependent/output variable is compressive strength in MPa.</p>
-<h3 id="background">1.2 Background</h3>
-<p>Machine learning (ML) algorithm finds patterns in massive amount of dataset and predicts the output. It provides a system which has ability to learn automatically and improve the performance from experiences. It builds a model based on training dataset and predict the output variable for test dataset. Traditionally, ML is divided into three categories: supervised, unsupervised and reinforcement learning. With the given dataset, we used supervised learning technique because output of trained dataset was provided, and the overall goal was to learn and map inputs to the output.</p>
-<p>Models are required for performing machine learning and there are various of models that can have been researched for learning systems. Artificial neural network is one of them. It is based on the behavior of neurons. It consists of a set of interconnected neurons arranged in layers. Typically, there are three types of layers: input layer, hidden layer, and output layer. Each neuron in input layer corresponds to the input variables. The outputs are obtained through neurons in output layer. Hidden layers take the weighted inputs, perform the regression, and produce outputs. Other methods like Linear Regression and Lasso assume linear relationship between input and output variables. To avoid the overfit, regularization is performed. Lasso regularization is one of them which modifies the ordinary least square error by penalizing the regression method. Decision tree method uses tree-like model to deliver the final output. Random decision forest is ensemble learning technique which uses Bootstrap Aggregation. The main idea is to combine multiple decision tree to find the final output.</p>
-<h3 id="literature-review">1.3 Literature Review</h3>
-<p>Being a highly non-linear materials, modelling concrete’s behavior in terms of its strength and durability is a difficult task. Free models – Mathematical models based on experimental data – are generally recommended and have been used widely. <span class="citation" data-cites="Alshihri2009">[<span class="citeproc-not-found" data-reference-id="Alshihri2009"><strong>???</strong></span>]</span> used neural network (NN) models for predicting compressive strength of light weight concrete mixtures for 3, 7, 14 and 28 days of curing. The data were collected by performing compressive strength test for different concrete mix. Cement, silica fumes, light weight coarse aggregate, light weight fine aggregate and water were used in different proportions to cast concrete cubes (150 mm x 150 mm x 150 mm). Two training processes – back propagation (BP) and cascade correlation (CC) were used. While training the models, minimum mean square error (MSE) corresponds to the most stable system. Back propagation algorithm fine tunes the weights of input neural network based on MSE obtained from previous iteration. However, cascade correlation does not just adjust weights of fixed number of hidden layers. It starts with one hidden layer to train automatically and add new layers one by one by keeping the weights frozen from pervious training. Preprocessing of data set were performed and, 70% and 30% were randomly chosen for training and validation, respectively. The assessments were performed using for indices – Mean absolute error (MAE), root mean square error (RMSE), correlation coefficient R, and coefficient of efficiency Ef. Eight inputs provided in input layers were: sand, water to cement ratio, light weight fine aggregate, light weight coarse aggregate, silica fumes, superplasticizer and curing period and, four outputs were the compressive strength of concrete mix after 3, 7, 14 and 28 days. The parametric study was performed by changing the different number of hidden layers for BP training process. The most stable network was found when there were 14 neurons in one hidden layer. Furthermore, additional hidden layer was added to improve the performance. 14 layers in one hidden layer (based on previous training) and another layer with 6 neurons gave the optimum results. This is similar to the results found by Maier and Dandy <span class="citation" data-cites="Maier1998">[<span class="citeproc-not-found" data-reference-id="Maier1998"><strong>???</strong></span>]</span> that first and second hidden layers should not exceed 3:1 ratio for maximum accuracy. Values of assessment indices are summarized in the following table:</p>
-<p><strong>Table: Mean absolute (MAE) and correlation coefficient R for BP (8-14-6-4) and CC model</strong></p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><em>Method</em></th>
-<th style="text-align: center;">MAE</th>
-<th style="text-align: center;">R</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">BP(18-14-6-4)</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Trained data</td>
-<td style="text-align: center;">2.22%</td>
-<td style="text-align: center;">0.972</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Testing data</td>
-<td style="text-align: center;">1.987%</td>
-<td style="text-align: center;">0.977</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CC</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Trained data</td>
-<td style="text-align: center;">2.22%</td>
-<td style="text-align: center;">0.974</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Testing data</td>
-<td style="text-align: center;">1.797%</td>
-<td style="text-align: center;">0.982</td>
-</tr>
-</tbody>
-</table>
-<p>This shows that both NN models provided similar results. But it was observed that CC was better than BP (8-14-6-4) model as it learns quickly and determine the size and topology on its own. These analyses have huge potential in predicting the properties of concrete and avoid expensive and time-consuming tests.
-<span class="citation" data-cites="Yeh1998">[<span class="citeproc-not-found" data-reference-id="Yeh1998"><strong>???</strong></span>]</span> predicted the behaviour of High-Performance Concrete (HPC) using ANN. The paper argues that the problem of difficulty in the prediction of HPC behaviors can be solved by the use of Artificial Neural Networks (ANN). The research describes ANN’s a collective of parallel architecture that can be used to solve critical problems by cooperation and interconnection with simple computing elements called neurons. The target behind creating the ANN in the research was to have a model which can efficiently predict the strength of different HPC mixes. The main principle on which neural networks work as back-propagation and gradient descent. The data set used to train the model consisted to experiments involving strength experiments and predictions. The concept was to train the model on the set of experiments which describe material behavior and then create a successful neural network which can then serve as a model to predict strength of HPC mixes in general. There are eight different parameters which the research takes to initialize the network they are: quantities of cement, fly-ash, blast-furnace slag, water, super-plasticizer, and fine aggregate. The model was trained from a dataset complied from 17 different sources and in total 727 records of strength experimentation data was used to train the model. The division of the data was done into four sets A, B, C and D out of which sets of 3 were used to train the model and 1 set was used to test the strength predictive ability of the model. The success of the model is highlighted from the fact that the correlation parameter between strength predictions and variables in a model was much closer to 1 than the standard regression model traditionally used to test the model.</p>
-<p><span class="citation" data-cites="Atici2011">[<span class="citeproc-not-found" data-reference-id="Atici2011"><strong>???</strong></span>]</span> predicted the strength of concrete with different types of mineral admixtures. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete.</p>
-<p>Compared to the linear regression method, ANN had advantages of constructing the relationships among input and output parameters automatically, especially for calculating nonlinear functional relationships. The article verifies the effectiveness of Artificial Neural Networks in predicting concrete strength and is helpful for our own project. However, one weakness is that the training database used in the article is not big enough. If an Artificial Neural Network model with wide applicability was wanted, a larger database is needed.</p>
+<h2 id="introduction">Introduction</h2>
+<p>The second most consumed substance in the world after water is concrete. Currently, the world produces 4.4 billion of concrete annually. Conventional concrete is a mixture of cement, aggregates (coarse and fine) and water. Many admixtures like mineral and chemical are incorporated in concrete to improve its performance. The main idea is not only to improve its overall performance and durability but also to reduce the emission of carbon dioxide produced by concrete industry itself. Cement production itself is highly energy intensive process. In 2015, it generated around 2.8 billion of CO2 (8% of total). Lots of research have been carried out to decrease the percentage of cement in concrete by using different substitutes. Researchers are opting for more environment friendly and sustainable options. This new idea of unconventional concrete requires backup and standards. The conventional method of testing concrete’s strength is to cast concrete cylinders or cubes with different mix ratio of its constituents and test them after 7, 14 or 28 days. This method requires significant amount of labor and time.</p>
 <h2 id="method">2. Method</h2>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>It is done in order to analyze the data used for the project more comprehensively. In order to do so, the first step is to import the required libraires. And load the training, test and sample data.</p>
@@ -513,13 +458,6 @@ Department of Something, University of Whatever; Department of Whatever, Univers
 <img src="https://github.com/qinyuz2/project3/blob/master/content/images/Kaggle.png?raw=true" alt="" /><figcaption><strong>Figure: Kaggle Competition Page</strong></figcaption>
 </figure>
 <h2 id="conclusion">4. Conclusion</h2>
-<p>From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
-Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials.</p>
-<h2 id="references">References</h2>
-<p><span class="citation" data-cites="Yeh1998">[<span class="citeproc-not-found" data-reference-id="Yeh1998"><strong>???</strong></span>]</span>:doi: 10.1016/S0008-8846(98)00165-3
-<span class="citation" data-cites="Atici2011">[<span class="citeproc-not-found" data-reference-id="Atici2011"><strong>???</strong></span>]</span>: doi: 10.1016/j.eswa.2011.01.156
-<span class="citation" data-cites="Maier1998">[<span class="citeproc-not-found" data-reference-id="Maier1998"><strong>???</strong></span>]</span>: doi: 10.1016/S1364-8152(98)00020-6
-<span class="citation" data-cites="Alshihri2009">[<span class="citeproc-not-found" data-reference-id="Alshihri2009"><strong>???</strong></span>]</span>: doi: 10.1016/j.conbuildmat.2008.12.003</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -729,7 +667,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:e888c858-e7ac-41e4-b97a-dba0e355334e" class="tablenos">
+<div id="tbl:c92653cd-4c75-4ba7-a36d-6931b247c06a" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -810,7 +748,7 @@ useful for <em>general information</em> - <a href="https://manubot.org/">manubot
 useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<h2 class="page_break_before" id="references-1">References</h2>
+<h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-IhliSZDo">
@@ -860,10 +798,6 @@ Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat 
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></p>
 </div>
 </div>
-<p>[1] Alshihri, M. M., Azmy, A. M., &amp; El-Bisy, M. S. (2009). Neural networks for predicting compressive strength of structural light weight concrete. Construction and Building Materials, 23(6), 2214-2219. [https://doi.org/10.1016/j.conbuildmat.2008.12.003] (https://doi.org/10.1016/j.conbuildmat.2008.12.003)</p>
-<p>[2] Maier, H. R., &amp; Dandy, G. C. (1998). The effect of internal parameters and geometry on the performance of back-propagation neural networks: an empirical study. Environmental Modelling &amp; Software, 13(2), 193-209. [https://doi.org/10.1016/S1364-8152(98)00020-6] (https://doi.org/10.1016/S1364-8152(98)00020-6)</p>
-<p>[3] Yeh, I. C. (1998). Modeling of strength of high-performance concrete using artificial neural networks. Cement and Concrete research, 28(12), 1797-1808. [https://doi.org/10.1016/S0008-8846(98)00165-3] (https://doi.org/10.1016/S0008-8846(98)00165-3)</p>
-<p>[4] Atici, U. (2011). Prediction of the strength of mineral admixture concrete using multivariable regression analysis and an artificial neural network. Expert Systems with applications, 38(8), 9609-9618. [https://doi.org/10.1016/j.eswa.2011.01.156] (https://doi.org/10.1016/j.eswa.2011.01.156)</p>
 <!-- default theme -->
 
 <style>
