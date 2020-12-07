@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Qinyu Zhang
-- Sonali Srivastava
+- Jane Roe
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-07'
@@ -43,9 +43,13 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
 
-  <meta name="citation_author" content="Sonali Srivastava" />
+  <meta name="citation_author" content="Jane Roe" />
 
-  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
 
   <link rel="canonical" href="https://qinyuz2.github.io/project3/" />
 
@@ -59,11 +63,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +99,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/293087ddccc5503e531671ad242977f830376eb7/))
+([permalink](https://qinyuz2.github.io/project3/v/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c/))
 was automatically generated
-from [qinyuz2/project3@293087d](https://github.com/qinyuz2/project3/tree/293087ddccc5503e531671ad242977f830376eb7)
+from [qinyuz2/project3@9a6d547](https://github.com/qinyuz2/project3/tree/9a6d547e63ea85d3b699a93dffb7f74b5350aa8c)
 on December 7, 2020.
 </em></small>
 
@@ -112,11 +116,13 @@ on December 7, 2020.
      Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
 
-+ **Sonali Srivastava**<br>
++ **Jane Roe**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [Sonali1610](https://github.com/Sonali1610)<br>
+    [janeroe](https://github.com/janeroe)<br>
   <small>
-     Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
+     Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
 
 
@@ -141,7 +147,7 @@ Models are required for performing machine learning and there are various of mod
 
 ### 1.3 Literature Review 
 
-Being a highly non-linear materials, modelling concrete’s behavior in terms of its strength and durability is a difficult task. Free models – Mathematical models based on experimental data – are generally recommended and have been used widely. Neural network (NN) models for predicting compressive strength of light weight concrete mixtures for 3, 7, 14 and 28 days of curing was used in this article [1]. The data were collected by performing compressive strength test for different concrete mix. Cement, silica fumes, light weight coarse aggregate, light weight fine aggregate and water were used in different proportions to cast concrete cubes (150 mm x 150 mm x 150 mm). Two training processes – back propagation (BP) and cascade correlation (CC) were used. While training the models, minimum mean square error (MSE) corresponds to the most stable system. Back propagation algorithm fine tunes the weights of input neural network based on MSE obtained from previous iteration. However, cascade correlation does not just adjust weights of fixed number of hidden layers. It starts with one hidden layer to train automatically and add new layers one by one by keeping the weights frozen from pervious training. Preprocessing of data set were performed and, 70% and 30% were randomly chosen for training and validation, respectively. The assessments were performed using for indices – Mean absolute error (MAE), root mean square error (RMSE), correlation coefficient R, and coefficient of efficiency Ef. Eight inputs provided in input layers were: sand, water to cement ratio, light weight fine aggregate, light weight coarse aggregate, silica fumes, superplasticizer and curing period and, four outputs were the compressive strength of concrete mix after 3, 7, 14 and 28 days. The parametric study was performed by changing the different number of hidden layers for BP training process. The most stable network was found when there were 14 neurons in one hidden layer. Furthermore, additional hidden layer was added to improve the performance. 14 layers in one hidden layer (based on previous training) and another layer with 6 neurons gave the optimum results. This is similar to the results found by Maier and Dandy [2] that first and second hidden layers should not exceed 3:1 ratio for maximum accuracy. Values of assessment indices are summarized in the following table: 
+Being a highly non-linear materials, modelling concrete’s behavior in terms of its strength and durability is a difficult task. Free models – Mathematical models based on experimental data – are generally recommended and have been used widely. [@Alshihri2009] used neural network (NN) models for predicting compressive strength of light weight concrete mixtures for 3, 7, 14 and 28 days of curing. The data were collected by performing compressive strength test for different concrete mix. Cement, silica fumes, light weight coarse aggregate, light weight fine aggregate and water were used in different proportions to cast concrete cubes (150 mm x 150 mm x 150 mm). Two training processes – back propagation (BP) and cascade correlation (CC) were used. While training the models, minimum mean square error (MSE) corresponds to the most stable system. Back propagation algorithm fine tunes the weights of input neural network based on MSE obtained from previous iteration. However, cascade correlation does not just adjust weights of fixed number of hidden layers. It starts with one hidden layer to train automatically and add new layers one by one by keeping the weights frozen from pervious training. Preprocessing of data set were performed and, 70% and 30% were randomly chosen for training and validation, respectively. The assessments were performed using for indices – Mean absolute error (MAE), root mean square error (RMSE), correlation coefficient R, and coefficient of efficiency Ef. Eight inputs provided in input layers were: sand, water to cement ratio, light weight fine aggregate, light weight coarse aggregate, silica fumes, superplasticizer and curing period and, four outputs were the compressive strength of concrete mix after 3, 7, 14 and 28 days. The parametric study was performed by changing the different number of hidden layers for BP training process. The most stable network was found when there were 14 neurons in one hidden layer. Furthermore, additional hidden layer was added to improve the performance. 14 layers in one hidden layer (based on previous training) and another layer with 6 neurons gave the optimum results. This is similar to the results found by Maier and Dandy [@Maier1998] that first and second hidden layers should not exceed 3:1 ratio for maximum accuracy. Values of assessment indices are summarized in the following table: 
 
 **Table:  Mean absolute (MAE) and correlation coefficient R for BP (8-14-6-4) and CC model**
 
@@ -156,9 +162,9 @@ Being a highly non-linear materials, modelling concrete’s behavior in terms of
 
 
 This shows that both NN models provided similar results. But it was observed that CC was better than BP (8-14-6-4) model as it learns quickly and determine the size and topology on its own. These analyses have huge potential in predicting the properties of concrete and avoid expensive and time-consuming tests. 
-The problem statement that the paper deals with is the issue of predicting the behavior of High-Performance Concrete (HPC) [3] The paper argues that the problem of difficulty in the prediction of HPC behaviors can be solved by the use of Artificial Neural Networks (ANN). The research describes ANN’s a collective of parallel architecture that can be used to solve critical problems by cooperation and interconnection with simple computing elements called neurons. The target behind creating the ANN in the research was to have a model which can efficiently predict the strength of different HPC mixes. The main principle on which neural networks work as back-propagation and gradient descent. The data set used to train the model consisted to experiments involving strength experiments and predictions. The concept was to train the model on the set of experiments which describe material behavior and then create a successful neural network which can then serve as a model to predict strength of HPC mixes in general. There are eight different parameters which the research takes to initialize the network they are: quantities of cement, fly-ash, blast-furnace slag, water, super-plasticizer, and fine aggregate. The model was trained from a dataset complied from 17 different sources and in total 727 records of strength experimentation data was used to train the model. The division of the data was done into four sets A, B, C and D out of which sets of 3 were used to train the model and 1 set was used to test the strength predictive ability of the model. The success of the model is highlighted from the fact that the correlation parameter between strength predictions and variables in a model was much closer to 1 than the standard regression model traditionally used to test the model. 
+[@Yeh1998] predicted the behaviour of High-Performance Concrete (HPC) using ANN. The paper argues that the problem of difficulty in the prediction of HPC behaviors can be solved by the use of Artificial Neural Networks (ANN). The research describes ANN’s a collective of parallel architecture that can be used to solve critical problems by cooperation and interconnection with simple computing elements called neurons. The target behind creating the ANN in the research was to have a model which can efficiently predict the strength of different HPC mixes. The main principle on which neural networks work as back-propagation and gradient descent. The data set used to train the model consisted to experiments involving strength experiments and predictions. The concept was to train the model on the set of experiments which describe material behavior and then create a successful neural network which can then serve as a model to predict strength of HPC mixes in general. There are eight different parameters which the research takes to initialize the network they are: quantities of cement, fly-ash, blast-furnace slag, water, super-plasticizer, and fine aggregate. The model was trained from a dataset complied from 17 different sources and in total 727 records of strength experimentation data was used to train the model. The division of the data was done into four sets A, B, C and D out of which sets of 3 were used to train the model and 1 set was used to test the strength predictive ability of the model. The success of the model is highlighted from the fact that the correlation parameter between strength predictions and variables in a model was much closer to 1 than the standard regression model traditionally used to test the model. 
 
-Another article on prediction of the strength of concrete with different types of mineral admixtures was reviewed [4]. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete. 
+[@Atici2011] predicted the strength of concrete with different types of mineral admixtures. The article used the enter techniques in the Statistical Package for Social Science (SPSS) to develop the regression models. A total of six models were developed using different combinations of variables. After F-test, t-test and Durbin–Watson test, Model 4-6 past the validity assessment. When applying the artificial neural network method, the same dataset was used. Seventy percent, fifteen percent and fifteen percent of the data set were used in the learning, validation and testing phases respectively and they used the ANN toolbox (nftool) in Matlab to process computation. The article utilized a back-propagation training algorithm in a two-layer feed-forward network trained using the Levenberg–Marquardt algorithm. In the hidden layer, a nonlinear hyperbolic tangent sigmoid transfer function was applied, and in the output layer, a linear transfer function was applied. To determine the number of neurons in the hidden layer, they compared the predicted results produced by models trained with different numbers of hidden neurons with the desired output. Models were trained through multiple iterations. A total of six models were developed, and the first five proved to be reliable to predict compressive strength of concrete. 
 
 Compared to the linear regression method, ANN had advantages of constructing the relationships among input and output parameters automatically, especially for calculating nonlinear functional relationships. The article verifies the effectiveness of Artificial Neural Networks in predicting concrete strength and is helpful for our own project. However, one weakness is that the training database used in the article is not big enough. If an Artificial Neural Network model with wide applicability was wanted, a larger database is needed.
 
@@ -512,6 +518,308 @@ After submitting the *prediction2.csv* to Kaggle Competition, it provides a scor
 From the Exploratory Data analysis, it was found that Concrete strength has a very strong positive correlation with age and cement content. The correlation states that with the increase in the amount of curing time and cement content the strength of concrete would increase sharply. There was a significant negative correlation between concrete strength and water suggesting that increase in water content within the mix leads to degradation of strength. Prior to training of the model scaling of the dataset was needed and the high amount of outliers in the age variable data was taken into account.
 Random Forest Regression shows best performance with RMSE of 5.505 and accuracy of 0.9. ANN generally shows good performance with large dataset. Small datatset limits its performance. The model shows potential to predict the strength of concrete with any new mix design or materials. 
 
+## References
+
+[@Yeh1998]:doi: 10.1016/S0008-8846(98)00165-3
+[@Atici2011]: doi: 10.1016/j.eswa.2011.01.156
+[@Maier1998]: doi: 10.1016/S1364-8152(98)00020-6
+[@Alshihri2009]: doi: 10.1016/j.conbuildmat.2008.12.003
+
+
+This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
+Use this template as a starting point for your manuscript.
+
+The rest of this document is a full list of formatting elements/features supported by Manubot.
+Compare the input (`.md` files in the `/content` directory) to the output you see below.
+
+## Basic formatting
+
+**Bold** __text__
+
+[Semi-bold text]{.semibold}
+
+[Centered text]{.center}
+
+[Right-aligned text]{.right}
+
+*Italic* _text_
+
+Combined *italics and __bold__*
+
+~~Strikethrough~~
+
+1. Ordered list item
+2. Ordered list item
+    a. Sub-item
+    b. Sub-item
+        i. Sub-sub-item
+3. Ordered list item
+    a. Sub-item
+
+- List item
+- List item
+- List item
+
+subscript: H~2~O is a liquid
+
+superscript: 2^10^ is 1024.
+
+[unicode superscripts](https://www.google.com/search?q=superscript+generator)⁰¹²³⁴⁵⁶⁷⁸⁹
+
+[unicode subscripts](https://www.google.com/search?q=superscript+generator)₀₁₂₃₄₅₆₇₈₉
+
+A long paragraph of text.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Putting each sentence on its own line has numerous benefits with regard to [editing](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line) and [version control](https://rhodesmill.org/brandon/2012/one-sentence-per-line/).
+
+Line break without starting a new paragraph by putting  
+two spaces at end of line.
+
+## Document organization
+
+Document section headings:
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+### A heading centered on its own printed page{.center .page_center}
+
+<!-- an arbitrary comment. visible in input, but not visible in output. -->
+
+Horizontal rule:
+
+---
+
+`Heading 1`'s are recommended to be reserved for the title of the manuscript.
+
+`Heading 2`'s are recommended for broad sections such as *Abstract*, *Methods*, *Conclusion*, etc.
+
+`Heading 3`'s and `Heading 4`'s are recommended for sub-sections.
+
+## Links
+
+Bare URL link: <https://manubot.org>
+
+[Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah](https://manubot.org)
+
+[Link with text](https://manubot.org)
+
+[Link with hover text](https://manubot.org "Manubot Homepage")
+
+[Link by reference][manubot homepage]
+
+[Manubot Homepage]: https://manubot.org
+
+## Citations
+
+Citation by DOI [@doi:10.7554/eLife.32822].
+
+Citation by PubMed Central ID [@pmc:PMC6103790].
+
+Citation by PubMed ID [@pubmed:30718888].
+
+Citation by Wikidata ID [@wikidata:Q56458321].
+
+Citation by ISBN [@isbn:9780262517638].
+
+Citation by URL [@https://greenelab.github.io/meta-review/].
+
+Citation by alias [@deep-review].
+
+Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @deep-review; @isbn:9780262517638].
+Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pubmed:30718888; @pmc:PMC6103790; @deep-review].
+
+Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown's reference link syntax:
+
+[@deep-review]: doi:10.1098/rsif.2017.0387
+
+## Referencing figures, tables, equations
+
+Figure @fig:square-image
+
+Figure @fig:wide-image
+
+Figure @fig:tall-image
+
+Figure @fig:vector-image
+
+Table @tbl:bowling-scores
+
+Equation @eq:regular-equation
+
+Equation @eq:long-equation
+
+## Quotes and code
+
+> Quoted text
+
+> Quoted block of text
+>
+> Two roads diverged in a wood, and I—  
+> I took the one less traveled by,  
+> And that has made all the difference.
+
+Code `in the middle` of normal text, aka `inline code`.
+
+Code block with Python syntax highlighting:
+
+```python
+from manubot.cite.doi import expand_short_doi
+
+def test_expand_short_doi():
+    doi = expand_short_doi("10/c3bp")
+    # a string too long to fit within page:
+    assert doi == "10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah"
+```
+
+Code block with no syntax highlighting:
+
+```
+Exporting HTML manuscript
+Exporting DOCX manuscript
+Exporting PDF manuscript
+```
+
+## Figures
+
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
+
+![
+**An image too wide to fit within page at full size.**
+Loaded from a specific (hashed) version of the image on GitHub.
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png "Wide image"){#fig:wide-image}
+
+![
+**A tall image with a specified height.**
+Loaded from a specific (hashed) version of the image on GitHub.
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png "Tall image"){#fig:tall-image height=3in}
+
+![
+**A vector `.svg` image loaded from GitHub.**
+The parameter `sanitize=true` is necessary to properly load SVGs hosted via GitHub URLs.
+White background specified to serve as a backdrop for transparent sections of the image.
+](https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
+
+## Tables
+
+| *Bowling Scores* | Jane          | John          | Alice         | Bob           |
+|:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
+| Game 1 | 150 | 187 | 210 | 105 |
+| Game 2 |  98 | 202 | 197 | 102 |
+| Game 3 | 123 | 180 | 238 | 134 |
+
+Table: A table with a top caption and specified relative column widths.
+{#tbl:bowling-scores}
+
+|         | Digits 1-33                        | Digits 34-66                      | Digits 67-99                      | Ref.                                                        |
+|:--------|:-----------------------------------|:----------------------------------|:----------------------------------|:------------------------------------------------------------|
+| pi      | 3.14159265358979323846264338327950 | 288419716939937510582097494459230 | 781640628620899862803482534211706 | [`piday.org`](https://www.piday.org/million/)               |
+| e       | 2.71828182845904523536028747135266 | 249775724709369995957496696762772 | 407663035354759457138217852516642 | [`nasa.gov`](https://apod.nasa.gov/htmltest/gifcity/e.2mil) |
+
+Table: A table too wide to fit within page.
+{#tbl:constant-digits}
+
+|          | **Colors** <!-- $colspan="2" --> |                      |
+|:--------:|:--------------------------------:|:--------------------:|
+| **Size** | **Text Color**                   | **Background Color** |
+| big      | blue                             | orange               |
+| small    | black                            | white                |
+
+Table: A table with merged cells using the `attributes` plugin.
+{#tbl: merged-cells}
+
+## Equations
+
+A LaTeX equation:
+
+$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$ {#eq:regular-equation}
+
+An equation too long to fit within page:
+
+$$x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$$ {#eq:long-equation}
+
+## Special
+
+<i class="fas fa-exclamation-triangle"></i> [WARNING]{.semibold} _The following features are only supported and intended for `.html` and `.pdf` exports._
+_Journals are not likely to support them, and they may not display correctly when converted to other formats such as `.docx`._
+
+[Link styled as a button](https://manubot.org "Manubot Homepage"){.button}
+
+Adding arbitrary HTML attributes to an element using Pandoc's attribute syntax:
+
+::: {#some_id_1 .some_class style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true"}
+Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.
+:::
+
+Adding arbitrary HTML attributes to an element with the Manubot `attributes` plugin (more flexible than Pandoc's method in terms of which elements you can add attributes to):
+
+Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.
+<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" -->
+
+Available background colors for text, images, code, banners, etc:  
+
+`white`{.white}
+`lightgrey`{.lightgrey}
+`grey`{.grey}
+`darkgrey`{.darkgrey}
+`black`{.black}
+`lightred`{.lightred}
+`lightyellow`{.lightyellow}
+`lightgreen`{.lightgreen}
+`lightblue`{.lightblue}
+`lightpurple`{.lightpurple}
+`red`{.red}
+`orange`{.orange}
+`yellow`{.yellow}
+`green`{.green}
+`blue`{.blue}
+`purple`{.purple}
+
+Using the [Font Awesome](https://fontawesome.com/) icon set:
+
+<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i>
+
+[
+<i class="fas fa-scroll fa-lg"></i> **Light Grey Banner**<br>
+useful for *general information* - [manubot.org](https://manubot.org/)
+]{.banner .lightgrey}
+
+[
+<i class="fas fa-info-circle fa-lg"></i> **Blue Banner**<br>
+useful for *important information* - [manubot.org](https://manubot.org/)
+]{.banner .lightblue}
+
+[
+<i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
+useful for *warnings* - [manubot.org](https://manubot.org/)
+]{.banner .lightred}
 
 
 ## References {.page_break_before}
