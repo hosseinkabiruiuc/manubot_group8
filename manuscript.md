@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/27f4c63be808202cd92be32c24aa3330d194aee0/))
+([permalink](https://qinyuz2.github.io/project3/v/8e8234cc869364fb2bdd34d5c97f0cdc1042a680/))
 was automatically generated
-from [qinyuz2/project3@27f4c63](https://github.com/qinyuz2/project3/tree/27f4c63be808202cd92be32c24aa3330d194aee0)
+from [qinyuz2/project3@8e8234c](https://github.com/qinyuz2/project3/tree/8e8234cc869364fb2bdd34d5c97f0cdc1042a680)
 on December 7, 2020.
 </em></small>
 
@@ -188,9 +188,9 @@ Box plot analysis was performed:
 
 The observations and comments that can be made from the above box plot is as follows:
 
--The data in cement, slag, ash doesn't appear to have any significant outliers.
+- The data in cement, slag, ash doesn't appear to have any significant outliers.
 
--The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.
+- The data from water, superplastic, age, and strength appears to have some outliers, amidst them the age data has a long extension of the plot suggesting the highest amount of outliers amongst all of data columns mentioned.
 
 ### Distribution
 Dsitribution of the variables in the dataset have been plotted to gain better understanding. 
@@ -207,9 +207,9 @@ Distribution plot for strength variable
 
 The observations and comments that can be made from the distribution plots and skewness degreee data is as follows:
 
--The strength data is normally distributed.
+- The strength data is normally distributed.
 
--Water and cement data seems to be very near to being normally distributed.
+- Water and cement data seems to be very near to being normally distributed.
 
 -The data from age column as seen from box plot had a lot of outliers which is re-affirmed here with the distribution plot having very lengthy un-symmetrical extension beyond its mean value.
 
@@ -220,26 +220,26 @@ The observations and comments that can be made from the distribution plots and s
 
 The observations and comments that can be made from the pair plots is as follows:
 
--There is strong positive correlation between cement and strength which seems theoretically consistent.
+- There is strong positive correlation between cement and strength which seems theoretically consistent.
 
--In addition age also has a strong positive correlation to strength.
+- In addition age also has a strong positive correlation to strength.
 
--Water and strength have a negative correlation which aagain seems theoretically consistent.
+- Water and strength have a negative correlation which aagain seems theoretically consistent.
 
--Water and superplastic have a negeative correlation.
+- Water and superplastic have a negeative correlation.
 
--Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren't the best predctors of strength.
+- Slag, ash, coarseagg and fineagg are having poor correlation to strength so they aren't the best predctors of strength.
 
 ### Heat Map
 ![**EDA-14**](https://user-images.githubusercontent.com/70567674/101286307-52a0b380-37af-11eb-955a-81c8de20c544.png)
 
 The observations and comments that can be made from the heat map is as follows:
 
--Cement and age have strong correlation with strength
+- Cement and age have strong correlation with strength
 
--Water and superplastic have strong correlation
+- Water and superplastic have strong correlation
 
--Superplastic has somewhat smaller but a postive correlation with strength
+- Superplastic has somewhat smaller but a postive correlation with strength
 
 ## 2.2 Independent Variable and Dependent Variable
 
@@ -263,13 +263,13 @@ There are a total of eight independent variables used in the prediction which ar
 
 According to exploratory data analysis, what we're working with is tabular data and there's no missing value. Also, all the data is numerical. We use seven different methods.
 
--Linear Regression
--Lasso Method
--K-nearest Neighbor
--Support Vector Machine
--Neural Network
--Decision Tree Regressor
--Random Forest Regression
+- Linear Regression
+- Lasso Method
+- K-nearest Neighbor
+- Support Vector Machine
+- Neural Network
+- Decision Tree Regressor
+- Random Forest Regression
 
 Since we don’t have the actual concrete strength data in the given test dataset, we are going to split 20% of the train dataset to test models in order to evaluate the model performance. Based on the evaluation, we choose the best method. And then create a model using the whole train dataset to predict the test dataset and submit the result to the Kaggle Competition.
 

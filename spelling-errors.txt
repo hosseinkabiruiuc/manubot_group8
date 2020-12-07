@@ -54,7 +54,7 @@ skewness
 Sonali
 SPSS
 Srivastava
-Superplastic
+superplastic
 Superplasticizer
 UCI
 Urbana
