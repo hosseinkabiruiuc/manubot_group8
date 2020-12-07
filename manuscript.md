@@ -2,6 +2,7 @@
 author-meta:
 - Qinyu Zhang
 - Sonali Srivastava
+- Pratyush Kumar
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-07'
@@ -47,6 +48,10 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
 
+  <meta name="citation_author" content="Pratyush Kumar" />
+
+  <meta name="citation_author_institution" content="Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign" />
+
   <link rel="canonical" href="https://qinyuz2.github.io/project3/" />
 
   <meta property="og:url" content="https://qinyuz2.github.io/project3/" />
@@ -59,11 +64,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://qinyuz2.github.io/project3/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/" />
+  <link rel="alternate" type="text/html" href="https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/" />
+  <meta name="manubot_html_url_versioned" content="https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -78,7 +83,7 @@ header-includes: '<!--
   <!-- end Manubot generated metadata -->'
 keywords:
 - Machine Learning
-- Concrete Strength
+- Concrete Strength Prediction
 - Civil Engineering
 lang: en-US
 manubot-clear-requests-cache: false
@@ -95,9 +100,9 @@ title: 'Project 3: Concrete Strength Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/))
+([permalink](https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/))
 was automatically generated
-from [qinyuz2/project3@09b94cc](https://github.com/qinyuz2/project3/tree/09b94cc4805e87c9002a5bcad8aa8eebf00de078)
+from [qinyuz2/project3@35ab2fd](https://github.com/qinyuz2/project3/tree/35ab2fdb82437d11d6c98d36150e41ecef8d250a)
 on December 7, 2020.
 </em></small>
 
@@ -115,6 +120,13 @@ on December 7, 2020.
 + **Sonali Srivastava**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [Sonali1610](https://github.com/Sonali1610)<br>
+  <small>
+     Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
+  </small>
+
++ **Pratyush Kumar**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [pratyushkr9420](https://github.com/pratyushkr9420)<br>
   <small>
      Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>

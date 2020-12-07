@@ -3,16 +3,17 @@
     "title": "Project 3: Concrete Strength Prediction",
     "keywords": [
       "Machine Learning",
-      "Concrete Strength",
+      "Concrete Strength Prediction",
       "Civil Engineering"
     ],
     "lang": "en-US",
     "date-meta": "2020-12-07",
     "author-meta": [
       "Qinyu Zhang",
-      "Sonali Srivastava"
+      "Sonali Srivastava",
+      "Pratyush Kumar"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"citation_title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"og:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"twitter:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-07\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-07\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Qinyu Zhang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Sonali Srivastava\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<link rel=\"canonical\" href=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"og:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"twitter:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_pdf_url\" content=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"citation_title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"og:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta property=\"twitter:title\" content=\"Project 3: Concrete Strength Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-07\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-07\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Qinyu Zhang\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Sonali Srivastava\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Pratyush Kumar\" />\n<meta name=\"citation_author_institution\" content=\"Department of Civil &amp; Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<link rel=\"canonical\" href=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"og:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta property=\"twitter:url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://qinyuz2.github.io/project3/\" />\n<meta name=\"citation_pdf_url\" content=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://qinyuz2.github.io/project3/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -47,6 +48,18 @@
         "affiliation_numbers": [
           1
         ]
+      },
+      {
+        "github": "pratyushkr9420",
+        "name": "Pratyush Kumar",
+        "initials": "PK",
+        "email": "pkumar13@illinois.edu",
+        "affiliations": [
+          "Department of Civil & Environmental Engineering, University of Illinois at Urbana-Champaign"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
       }
     ],
     "affiliations": [
@@ -60,15 +73,15 @@
       "repo_slug": "qinyuz2/project3",
       "repo_owner": "qinyuz2",
       "repo_name": "project3",
-      "commit": "09b94cc4805e87c9002a5bcad8aa8eebf00de078",
-      "triggering_commit": "09b94cc4805e87c9002a5bcad8aa8eebf00de078",
-      "build_url": "https://github.com/qinyuz2/project3/commit/09b94cc4805e87c9002a5bcad8aa8eebf00de078/checks",
+      "commit": "35ab2fdb82437d11d6c98d36150e41ecef8d250a",
+      "triggering_commit": "35ab2fdb82437d11d6c98d36150e41ecef8d250a",
+      "build_url": "https://github.com/qinyuz2/project3/commit/35ab2fdb82437d11d6c98d36150e41ecef8d250a/checks",
       "job_url": "https://github.com/qinyuz2/project3/runs/run3"
     },
     "html_url": "https://qinyuz2.github.io/project3/",
     "pdf_url": "https://qinyuz2.github.io/project3/manuscript.pdf",
-    "html_url_versioned": "https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/",
-    "pdf_url_versioned": "https://qinyuz2.github.io/project3/v/09b94cc4805e87c9002a5bcad8aa8eebf00de078/manuscript.pdf",
+    "html_url_versioned": "https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/",
+    "pdf_url_versioned": "https://qinyuz2.github.io/project3/v/35ab2fdb82437d11d6c98d36150e41ecef8d250a/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {

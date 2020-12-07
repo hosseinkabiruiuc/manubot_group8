@@ -9,7 +9,7 @@ Champaign
 coarseagg
 compressive
 csv
-dataset
+Dataset
 datasets
 degreee
 deisgn
@@ -24,12 +24,13 @@ HPC
 Hyperparameter
 improtant
 Kaggle
+Kumar
 Levenberg
 libraires
 Maier
 Marquardt
 Matlab
-Modelling
+modelling
 MPa
 MSE
 multivariable
@@ -43,6 +44,8 @@ performace
 pervious
 plasticizer
 postive
+Pratyush
+pratyushkr
 predctors
 Preprocessing
 Qinyu
@@ -54,8 +57,8 @@ skewness
 Sonali
 SPSS
 Srivastava
-superplastic
-Superplasticizer
+Superplastic
+superplasticizer
 UCI
 Urbana
 wether
