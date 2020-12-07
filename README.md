@@ -1,4 +1,4 @@
-# CEE498 Data Science, Fall2020, Project3: Concrete Strength Prediction
+# CEE498 Data Science, Fall2020, Project 3: Concrete Strength Prediction
 
 
 
@@ -68,11 +68,6 @@ The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the
 For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
 ## License
-
-<!--
-usage note: edit this section to change the license of your manuscript or source code changes to this repository.
-We encourage users to openly license their manuscripts, which is the default as specified below.
--->
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License%20All-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
